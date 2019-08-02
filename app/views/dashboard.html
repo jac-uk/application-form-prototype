@@ -26,15 +26,16 @@
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
 
-  <form class="form" action="task-list" method="post">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
+
         <h1 class="govuk-heading-xl">
           Dashboard
         </h1>
-            <h1 class="govuk-heading-l">
-              Your exercises
-        </h1>
+
+        <h2 class="govuk-heading-l">
+          Your exercises
+        </h2>
         <ul class="govuk-list">
             <li>
               <a class="govuk-link" href="#">Regional Employment Judge</a>
@@ -49,19 +50,24 @@
               <a class="govuk-link" href="#">Chair of the Valuation Tribunal for England</a>
             </li>
           </ul>
+      </div><!--two-thirds-->
+    </div><!--grid-row-->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full"> 
+        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
       </div>
     </div>
-    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
+  <form class="form" action="task-list" method="post">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
           <button type="submit" class="govuk-button" data-module="govuk-button">
               New exercise
-            </button>
+          </button>
       </div>
     </div>
   </form>
-
 
   </main>
   <!--END MAIN WRAPPER-->
