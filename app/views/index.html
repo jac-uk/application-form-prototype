@@ -1,44 +1,83 @@
-
-{% extends "layout.html" %}
+{% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+  Sign in
 {% endblock %}
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        The GOV.UK Prototype Kit
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
+<div class="govuk-width-container">
+
+  <!--HEADER-->
+  <div class="govuk-heading-l">Judicial Appointments Commission</div>
+  <hr class="govuk-section-break govuk-section-break--visible">
+  <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your feedback will help us improve it.
+        </span>
       </p>
-
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
-
-      <h2 class="govuk-heading-m">About this page</h2>
-
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-        <li>
-          <a href="https://design-system.service.gov.uk">
-            GOV.UK Design System
-          </a>
-        </li>
-      </ul>
     </div>
+  <!--END HEADER-->
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+
+    <form class="form" action="dashboard" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-xl">
+            Sign in
+          </h1>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Email
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Password
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Sign in
+          </button>
+          <div>
+          <a href="#">
+            Forgotten your password?
+          </a>
+        </div>
+        </div>
+      </div>
+    </form>
+
+  </main>
+  <!--END MAIN WRAPPER-->
+
+  <!--FOOTER-->
+  <footer class="govuk-footer " role="contentinfo">
+      <div class="govuk-width-container ">
+          <div class="govuk-footer__meta">
+              <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+                <span class="govuk-footer__licence-description">
+                    <div>
+                        <a href="guide.html">
+                          Prototype kit guide
+                        </a>
+                      </div>
+                </span>
+              </div>
+            </div>
+        </div>
+    </footer>
+    <!--END FOOTER-->
+
 </div>
 
 {% endblock %}
