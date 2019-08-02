@@ -1,0 +1,129 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <!--HEADER-->
+  <div class="govuk-heading-l">Judicial Appointments Commission</div>
+  <hr class="govuk-section-break govuk-section-break--visible">
+  <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your feedback will help us improve it.
+        </span>
+      </p>
+    </div>
+  <!--END HEADER-->
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+
+  <form class="form" action="task-list" method="post">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">
+          New exercise
+        </h1>
+
+        <ol class="app-task-list">
+          <li>
+            <h2 class="app-task-list__section">
+              <span class="app-task-list__section-number">1. </span> Planning
+            </h2>
+            <ul class="app-task-list__items">
+              <li class="app-task-list__item">
+                <a class="app-task-list__task-name" href="exercise" aria-describedby="eligibility-completed">
+                  Exercise type
+                </a>
+                <strong class="govuk-tag app-task-list__task-completed" id="eligibility-completed">Completed</strong>
+              </li>
+              <li class="app-task-list__item">
+                <a class="app-task-list__task-name" href="exercise-2" aria-describedby="read-declaration-completed">
+                  Dates and budget
+                </a>
+                <strong class="govuk-tag app-task-list__task-completed" id="read-declaration-completed">Completed</strong>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="app-task-list__section">
+              <span class="app-task-list__section-number">2. </span> Lorem ipsum
+            </h2>
+            <ul class="app-task-list__items">
+              <li class="app-task-list__item">
+                <a class="app-task-list__task-name" href="#" aria-describedby="company-information-completed">
+                  Lorem ipsum
+                </a>
+    
+              </li>
+              <li class="app-task-list__item">
+                <a class="app-task-list__task-name" href="#" aria-describedby="contact-details-completed">
+                  Lorem ipsum
+                </a>
+              </li>
+              <li class="app-task-list__item">
+                <a class="app-task-list__task-name" href="#">
+                  Lorem ipsum
+                </a>
+              </li>
+              <li class="app-task-list__item">
+                <a class="app-task-list__task-name" href="#">
+                  Lorem ipsum
+                </a>
+              </li>
+              <li class="app-task-list__item">
+                <a class="app-task-list__task-name" href="#" aria-describedby="medical-information-completed">
+                  Lorem ipsum
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="app-task-list__section">
+              <span class="app-task-list__section-number">3. </span> Lorem ipsum
+            </h2>
+            <ul class="app-task-list__items">
+              <li class="app-task-list__item">
+                <a class="app-task-list__task-name" href="#">
+                  Lorem ipsum
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+
+
+  </main>
+  <!--END MAIN WRAPPER-->
+
+    <!--FOOTER-->
+    <footer class="govuk-footer " role="contentinfo">
+        <div class="govuk-width-container ">
+            <div class="govuk-footer__meta">
+                <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          
+                  <span class="govuk-footer__licence-description">
+                      <div>
+                          <a href="guide.html">
+                            Prototype kit guide
+                          </a>
+                        </div>
+                  </span>
+                </div>
+              </div>
+          </div>
+      </footer>
+      <!--END FOOTER-->
+
+</div>
+
+{% endblock %}
