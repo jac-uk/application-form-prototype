@@ -30,14 +30,17 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-xl">
-          New exercise
+          Add new exercise
         </h1>
         <div class="govuk-form-group">
-          <h1 class="govuk-heading-l">
-            Basic information
-          </h1>
           <label class="govuk-label" for="event-name">
               Exercise name
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Number of vacancies
             </label>
             <input class="govuk-input" id="event-name" name="event-name" type="text">
           </div>
@@ -89,9 +92,42 @@
                   Eligibility
                 </h1>
                 <span id="event-name-hint" class="govuk-hint" style="margin-top:5px; margin-bottom:0;">
-                  Required experience
+                  Select which professions can apply
                 </span>
+                <div class="govuk-form-group">
+                  
+                    <div class="govuk-checkboxes">
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                        <label class="govuk-label govuk-checkboxes__label" for="waste">
+                          Advocate
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                        <label class="govuk-label govuk-checkboxes__label" for="waste">
+                          Barrister
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                        <label class="govuk-label govuk-checkboxes__label" for="waste">
+                          CILEx
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                        <label class="govuk-label govuk-checkboxes__label" for="waste">
+                          Solicitor
+                        </label>
+                      </div>
+                      </div>
+                      </div>
+                      <br>
               </legend>
+              <span id="event-name-hint" class="govuk-hint" style="margin-top:5px; margin-bottom:0;">
+                  Choose the years of relevant experience the candidate must have
+                </span>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="eligibility" name="eligibility" type="radio" value="england">
@@ -119,6 +155,9 @@
           <label class="govuk-label" for="event-name">
             Reasonable length of service
           </label>
+          <span id="event-name-hint" class="govuk-hint" style="margin-top:5px; margin-bottom:0;">
+          Add the minimum numbre of years the candidate must work
+          </span>
           <input class="govuk-input" id="event-name" name="event-name" type="text">
         </div>
 
@@ -131,7 +170,7 @@
               </h1>
             </legend>
             <span id="waste-hint" class="govuk-hint">
-              Select all that apply.
+              Select all that apply
             </span>
             <div class="govuk-checkboxes">
               <div class="govuk-checkboxes__item">
@@ -174,25 +213,30 @@
           </fieldset>
         </div>
 
-        <div class="govuk-form-group">
-          <label class="govuk-label" for="event-name">
-            Number of vacancies
-          </label>
-          <input class="govuk-input" id="event-name" name="event-name" type="text">
-        </div>
+<br><br>
 
         <div class="govuk-form-group">
           <div class="govuk-fieldset" aria-describedby="waste-hint">
+              <h1 class="govuk-heading-l" style="margin-top:10px; margin-bottom:0;">
+                  Welsh requirement
+                </h1>
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
             </legend>
+            
             <div class="govuk-checkboxes">
               <div class="govuk-checkboxes__item">
                 <input class="govuk-checkboxes__input" id="welsh" name="welsh" type="checkbox" value="carcasses">
                 <label class="govuk-label govuk-checkboxes__label" for="welsh">
-                    Welsh language or devolution questions required
+                    Welsh language
                 </label>
               </div>
-              
+
+              <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="welsh" name="welsh" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="welsh">
+                      devolution questions
+                  </label>
+                </div>   
               <br><br>
               <button type="submit" class="govuk-button" data-module="govuk-button">
                   Save
