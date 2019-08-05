@@ -45,19 +45,28 @@
             <input class="govuk-input" id="event-name" name="event-name" type="text">
           </div>
           <div class="govuk-form-group">
-            <label class="govuk-label" for="width-10">
-              Salary
-            </label>
-            <input class="govuk-input govuk-input--width-10" id="width-10" name="width-4" type="text" placeholder="£">
-          </div>
-
-          <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-heading-l" style="margin-top:10px; margin-bottom:0;">
                   Type of exercise
                 </h1>
               </legend>
+              <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio" value="england">
+                    <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                      Salaried
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio" value="scotland">
+                    <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                      Fee paid
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>  
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio" value="england">
@@ -79,18 +88,21 @@
                 </div>
               </div>
             </fieldset>
-          </div>
+         
 
-          <h1 class="govuk-heading-l" style="margin-top:30px; margin-bottom:0;">
+        
             
-          </h1>
-
+          
+            <h1 class="govuk-heading-l" style="margin-top:10px; margin-bottom:0;">
+                Eligibility
+              </h1>
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                <h1 class="govuk-heading-l" style="margin-top:10px; margin-bottom:0;">
-                  Eligibility
-                </h1>
+              
+                <label class="govuk-label" for="event-name">
+                    Eligible professions
+                  </label>
                 <span id="event-name-hint" class="govuk-hint" style="margin-top:5px; margin-bottom:0;">
                   Select which professions can apply
                 </span>
@@ -125,6 +137,9 @@
                       </div>
                       <br>
               </legend>
+              <label class="govuk-label" for="event-name">
+                  Years of experience 
+                </label>
               <span id="event-name-hint" class="govuk-hint" style="margin-top:5px; margin-bottom:0;">
                   Choose the years of relevant experience the candidate must have
                 </span>
@@ -158,7 +173,26 @@
           <span id="event-name-hint" class="govuk-hint" style="margin-top:5px; margin-bottom:0;">
           Add the minimum numbre of years the candidate must work
           </span>
-          <input class="govuk-input" id="event-name" name="event-name" type="text">
+          <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="eligibility" name="eligibility" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="eligibility">
+                  4 years
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="eligibility-2" name="eligibility" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="eligibility-2">
+                  5 years
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="eligibility-3" name="eligibility" type="radio" value="wales">
+                <label class="govuk-label govuk-radios__label" for="eligibility-3">
+                  Other
+                </label>
+              </div>
+            </div>
         </div>
 
         <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
@@ -243,6 +277,7 @@
               </button>
             </div>
           </div>
+        </div>
         </form>
 
   </main>
