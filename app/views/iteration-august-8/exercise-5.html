@@ -35,34 +35,31 @@ Add new exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="exercise-4" method="post">
+    <form class="form" action="dashboard" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <!--RADIO GROUP-->
+          <!--RADIO BUTTON-->
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
+            <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
-                  Reasonable length of service
+                  Payment type
                 </h1>
               </legend>
-              <span id="event-name-hint" class="govuk-hint">
-                Add the minimum number of years the candidate must work
-              </span>
-              <div class="govuk-radios">
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
-                    value="england">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
-                    4 years
+                  <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
+                    value="email" data-aria-controls="conditional-how-contacted-conditional">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                    Salaried
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
-                    value="scotland">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
-                    5 years
+                  <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
+                    value="email" data-aria-controls="conditional-how-contacted-conditional">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                    Fee paid
                   </label>
                 </div>
               </div>

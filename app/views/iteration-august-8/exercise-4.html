@@ -21,69 +21,53 @@ Add new exercise
       </span>
     </p>
   </div>
-  <a href="task-list" class="govuk-back-link">Back</a>
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="dashboard">Dashboard</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        Create an exercise
+      </li>
+    </ol>
+  </div>
   <!--END HEADER-->
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="task-list" method="post">
+    <form class="form" action="exercise-5" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <h1 class="govuk-heading-xl" style="margin-bottom:10px; margin-top:30px;">
-            Create job advert
-          </h1>
-          <span id="waste-hint" class="govuk-hint">
-            Select role being advertised
-          </span>
+          <!--PAGE TITLE-->
+          <h3 class="govuk-heading-xl">
+            Number of vacancies
+          </h3>
 
-          <!--RADIO GROUP-->
+          <!--TEXT INPUT-->
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                Type of exercise
-              </legend>
-              <div class="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
-                    value="england">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
-                    Recorder
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
-                    value="scotland">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
-                    Circuit judge
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise-3" name="type-of-exercise" type="radio"
-                    value="wales">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-3">
-                    Deputy district judge
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise-3" name="type-of-exercise" type="radio"
-                    value="wales">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-3">
-                    District judge
-                  </label>
-                </div>
-              </div>
-            </fieldset>
+            <label class="govuk-heading-m" for="exercise-name" style="margin-bottom:0px;">
+              Now
+            </label>
+            <span id="event-name-hint" class="govuk-hint">
+              Section 84 of the XXX
+            </span>
+            <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text">
           </div>
 
-          <div>
-            <a href="#">
-              Add another
-            </a>
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-heading-m" for="exercise-name" style="margin-bottom:0px;">
+              Future
+            </label>
+            <span id="event-name-hint" class="govuk-hint">
+              Section 97 of the XXX
+            </span>
+            <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text">
           </div>
-          <br><br>
+
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Save
+            Continue
           </button>
 
         </div>
@@ -94,23 +78,12 @@ Add new exercise
 
   <!--FOOTER-->
   <footer class="govuk-footer " role="contentinfo">
-    <div class="govuk-width-container ">
-      <div class="govuk-footer__meta">
-        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-
-          <span class="govuk-footer__licence-description">
-            <div>
-              <a href="guide.html">
-                Prototype kit guide
-              </a>
-            </div>
-          </span>
-        </div>
-      </div>
-    </div>
+    <a href="guide.html">
+      Prototype kit guide
+    </a>
   </footer>
-  <!--END FOOTER-->
 
 </div>
+<!--END WIDTH-->
 
 {% endblock %}
