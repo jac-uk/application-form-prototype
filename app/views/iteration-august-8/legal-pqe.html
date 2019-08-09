@@ -1,0 +1,54 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+  <a href="exercise-4" class="govuk-back-link">Back</a>
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">
+          [Legal - court and tribunal branch]
+        </h1>
+
+        <h1 class="govuk-heading-xl">
+          Years of post-qualifying experience
+        </h1>
+        <span id="event-name-hint" class="govuk-hint">
+          Add the minimum number of years of law-related work experience the candidate must have
+        </span>
+        <div class="govuk-radios govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="legal-yes" name="legal" type="radio" value="true">
+            <label class="govuk-label govuk-radios__label" for="legal-yes">
+              5 years
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="legal-yes" name="legal" type="radio" value="true">
+            <label class="govuk-label govuk-radios__label" for="legal-yes">
+              7 years
+            </label>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
