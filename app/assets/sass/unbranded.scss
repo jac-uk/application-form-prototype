@@ -142,3 +142,15 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 .govuk-form-group {
   margin-bottom: 40px;
 }
+
+.govuk-summary-list__key {
+  margin-bottom: 5px;
+  font-weight: 700;
+  width: 15%;
+}
+
+@media (min-width: 40.0625em) {
+  .govuk-summary-list__key {
+    width: 10%;
+  }
+}
