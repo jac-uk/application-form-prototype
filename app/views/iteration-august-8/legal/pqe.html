@@ -9,11 +9,11 @@ Create an exercise
 <div class="govuk-width-container">
 
   {% include "includes/header.html" %}
-  <a href="exercise-2.html" class="govuk-back-link">Back</a>
+  <a href="#" class="govuk-back-link">Back</a>
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="exercise-4" method="post">
+    <form class="form" action="jurisdictions" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
@@ -22,29 +22,37 @@ Create an exercise
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
-                  Reasonable length of service
+                  Years of post-qualifying experience
                 </h1>
               </legend>
               <span id="event-name-hint" class="govuk-hint">
-                Add the minimum number of years the candidate must work
+                Add the minimum number of years of law-related work experience the candidate must have
               </span>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
-                    value="england">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
-                    4 years
+                  <input class="govuk-radios__input" id="payment-type" name="payment-type" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="payment-type">
+                    5 years
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                  <input class="govuk-radios__input" id="payment-type-2" name="payment-type" type="radio"
                     value="scotland">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
-                    5 years
+                  <label class="govuk-label govuk-radios__label" for="payment-type-2">
+                    7 years
                   </label>
                 </div>
               </div>
             </fieldset>
+          </div>
+
+          <!--TEXT AREA-->
+          <div class="govuk-form-group">
+            <label class="govuk-heading-xl" for="more-detail" style="margin-bottom:10px;">
+              Additional selection criteria
+            </label>
+            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+              aria-describedby="more-detail-hint"></textarea>
           </div>
 
           <!--BUTTON-->
@@ -52,10 +60,8 @@ Create an exercise
             Continue
           </button>
 
-          <!--END MAIN WRAPPER-->
         </div>
       </div>
-    </form>
   </main>
 
   {% include "includes/footer.html" %}

@@ -9,14 +9,15 @@ Create an exercise
 <div class="govuk-width-container">
 
   {% include "includes/header.html" %}
-  <a href="exercise-4" class="govuk-back-link">Back</a>
+  <a href="#" class="govuk-back-link">Back</a>
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form action="/iteration-august-8/legal-answer" method="post" class="form">
+        <form action="/iteration-august-8/legal/length" method="post" class="form">
 
+          <!--RADIO GROUP-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
@@ -28,13 +29,7 @@ Create an exercise
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="legal-yes" name="legal" type="radio" value="true">
                   <label class="govuk-label govuk-radios__label" for="legal-yes">
-                    Legal – court
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="legal-yes" name="legal" type="radio" value="true">
-                  <label class="govuk-label govuk-radios__label" for="legal-yes">
-                    Legal – tribunal
+                    Legal
                   </label>
                 </div>
                 <div class="govuk-radios__item">
@@ -44,14 +39,14 @@ Create an exercise
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="legal-no" name="legal" type="radio" value="false">
-                  <label class="govuk-label govuk-radios__label" for="legal-no">
+                  <input class="govuk-radios__input" id="legal-no" name="legal" type="radio" value="false" disabled>
+                  <label class="govuk-label govuk-radios__label" for="legal-no" disabled>
                     Senior
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="legal-no" name="legal" type="radio" value="false">
-                  <label class="govuk-label govuk-radios__label" for="legal-no">
+                  <input class="govuk-radios__input" id="legal-no" name="legal" type="radio" value="false" disabled>
+                  <label class="govuk-label govuk-radios__label" for="legal-no" disabled>
                     Leadership
                   </label>
                 </div>
