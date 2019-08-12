@@ -17,17 +17,33 @@ Create an exercise
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <!--TEXT INPUT-->
           <div class="govuk-form-group">
-            <label class="govuk-heading-xl" for="exercise-name" style="margin-bottom:10px;">
-              Schedule 2 (optional)
-            </label>
-            <span id="waste-hint" class="govuk-hint">
-              The candidate must have held full-time appointment for at least 3 years in one of the offices listed
-              in <a href="https://www.legislation.gov.uk/ukpga/1971/23/schedule/2">Part 1A of
-                Schedule 2 to the Courts Act 1971</a>
-            </span>
-            <input class="govuk-input" id="exercise-name" name="exercise-name" type="text">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h1 class="govuk-fieldset__heading">
+                  Can non-qualified candidates apply?
+                </h1>
+              </legend>
+              <span id="event-name-hint" class="govuk-hint">
+                This is also known as <a href="https://www.legislation.gov.uk/ukpga/1971/23/schedule/2">Schedule 2</a>
+              </span>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
           </div>
 
           <!--BUTTON-->
