@@ -1,0 +1,62 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="payment" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <h3 class="govuk-heading-xl">
+            Number of vacancies
+          </h3>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-heading-m" for="exercise-name" style="margin-bottom:0px;">
+              To start straight away
+            </label>
+            <span id="event-name-hint" class="govuk-hint">
+              These are also called section 84 (S84) vacancies
+            </span>
+            <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text">
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-heading-m" for="exercise-name" style="margin-bottom:0px;">
+              To join the waiting list
+            </label>
+            <span id="event-name-hint" class="govuk-hint">
+              These are also called section 97 (S97) vacancies
+            </span>
+            <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text">
+          </div>
+
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
