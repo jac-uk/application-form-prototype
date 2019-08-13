@@ -1,0 +1,61 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="qualifications" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+          <span class="govuk-caption-xl">003</span>
+          <h1 class="govuk-heading-xl">Salaried Judge of the Upper Tribunal, Immigration and Asylum Chamber</h1>
+
+          <!--TABLE-->
+          <h2 class="govuk-heading-l">Role information</h2>
+          <a href="#">Change</a>
+          <div class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                lorem
+              </dt>
+              <dd class="govuk-summary-list__value">
+                lorem ipsum
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                lorem
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Lorem ipsum
+              </dd>
+            </div>
+          </div>
+
+
+          <hr class="govuk-section-break govuk-section-break--visible">
+          <br><br>
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Add information about the candidate
+          </button>
+
+        </div>
+      </div>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
