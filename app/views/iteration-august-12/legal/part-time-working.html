@@ -13,7 +13,7 @@ Create an exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="part-time-yes" method="post">
+    <form class="form" action="qualifications" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
@@ -22,11 +22,11 @@ Create an exercise
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
-                  Part time working
+                  Is fractal working offered for this role?
                 </h1>
               </legend>
               <span id="event-name-hint" class="govuk-hint">
-                Is part-time working offered for this role?
+                This is also known as salaried part-time working
               </span>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
@@ -41,6 +41,40 @@ Create an exercise
                     value="scotland">
                   <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
                     No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+
+          <!--CHECKBOX GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                <h1 class="govuk-fieldset__heading">
+                  Percentages the candidate can work
+                </h1>
+              </legend>
+              <span id="waste-hint" class="govuk-hint">
+              </span>
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    70%
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    80%
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    90%
                   </label>
                 </div>
               </div>
