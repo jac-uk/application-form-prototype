@@ -17,51 +17,29 @@ Create an exercise
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <!--RADIO GROUP-->
+
+          <!--CHECKBOX GROUP-->
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
-                  Are work expenses paid?
+                  Additional benefits
                 </h1>
               </legend>
-              <div class="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="payment-type" name="payment-type" type="radio" value="england">
-                  <label class="govuk-label govuk-radios__label" for="payment-type">
-                    Yes
+              <span id="waste-hint" class="govuk-hint">
+                Select all that apply
+              </span>
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Expenses paid
                   </label>
                 </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="payment-type-2" name="payment-type" type="radio"
-                    value="scotland">
-                  <label class="govuk-label govuk-radios__label" for="payment-type-2">
-                    No
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-          </div>
-          <!--RADIO GROUP-->
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                <h1 class="govuk-fieldset__heading">
-                  Is a pension paid?
-                </h1>
-              </legend>
-              <div class="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="payment-type" name="payment-type" type="radio" value="england">
-                  <label class="govuk-label govuk-radios__label" for="payment-type">
-                    Yes
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="payment-type-2" name="payment-type" type="radio"
-                    value="scotland">
-                  <label class="govuk-label govuk-radios__label" for="payment-type-2">
-                    No
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Pension paid
                   </label>
                 </div>
               </div>
