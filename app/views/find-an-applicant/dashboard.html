@@ -14,34 +14,32 @@ Your exercises
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-half">
-        <h1 class="govuk-heading-xl">Open exercises</h1>
+        <h1 class="govuk-heading-xl">Your exercises</h1>
+        <h2 class="govuk-heading-m">Nora Brodian</h2>
+        </p>
       </div>
-
-      <div class="govuk-grid-column-one-half">
-
-        <a href="#" class="govuk-button govuk-button--secondary">
-          View all exercises
-        </a>
-      </div>
-    </div>
-
-    <!--TEXT INPUT-->
-    <div class="govuk-form-group">
-      <label class="govuk-heading-xl" for="exercise-name" style="margin-bottom:10px;">
-        Search
-      </label>
-      <input class="govuk-input" id="exercise-name" name="exercise-name" type="text">
-    </div>
-    <a href="search-results" class="govuk-button govuk-button">
-      Search
-    </a>
+      <div>
 
 
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-full">
+        <div class="govuk-grid-column-one-half">
+          <a href="search-results" class="govuk-button">
+            Search candidates
+          </a>
+
+          <div class="govuk-form-group">
+
+          </div>
+          <a href="#" class="govuk-button govuk-button--secondary">
+            Search exerices
+          </a>
+        </div>
+
+
+
         <!--TABLE-->
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
           <div class="govuk-summary-list__row">
+            <h2> New exercises</h2>
             <dt class="govuk-summary-list__key">
               <a href="#">431</a>
             </dt>
@@ -49,21 +47,47 @@ Your exercises
               <a href="#">Salaried Judge of the Upper Tribunal, Immigration and Asylum Chamber</a>
             </dd>
           </div>
+        </dl>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row"></div>
+          <dt class="govuk-summary-list__key">
+            <a href="#">381</a>
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <a href="#">Fee-paid Valuer Chairmen and Fee-paid Valuer Members
+              of the First-tier Tribunal, Residential Property Tribunal</a>
+          </dd>
+        </dl>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row"></div>
+          <h2> Exercises near completion</h2>
+          <dt class="govuk-summary-list__key">
+            <a href="#">356</a>
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <a href="#">Court of Appeal Judge - Cayman Islands</a>
+          </dd>
+
+        </dl>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              <a href="#">381</a>
+              <a href="#">342</a>
             </dt>
             <dd class="govuk-summary-list__value">
-              <a href="#">Fee-paid Valuer Chairmen and Fee-paid Valuer Members
-                of the First-tier Tribunal, Residential Property Tribunal</a>
+              <a href="#">District Judge (Magistrates' Courts</a>
             </dd>
-
-          </div>
         </dl>
+
+
+
+
 
         <!--END MAIN WRAPPER-->
       </div>
-    </div>
   </main>
 
   {% include "includes/footer.html" %}
