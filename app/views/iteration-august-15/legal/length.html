@@ -12,7 +12,7 @@ Create an exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="additional" method="post">
+    <form class="form" action="detail-3" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
@@ -21,24 +21,32 @@ Create an exercise
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
-                  Years of post-qualifying experience
+                  Reasonable length of service
                 </h1>
               </legend>
               <span id="event-name-hint" class="govuk-hint">
-                Add the minimum number of years of law-related work experience the candidate must have
+                Add the minimum number of years the candidate must work
               </span>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="payment-type" name="payment-type" type="radio" value="england">
-                  <label class="govuk-label govuk-radios__label" for="payment-type">
+                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                    4 years
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
                     5 years
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="payment-type-2" name="payment-type" type="radio"
-                    value="scotland">
-                  <label class="govuk-label govuk-radios__label" for="payment-type-2">
-                    7 years
+                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                    Other
                   </label>
                 </div>
               </div>
@@ -50,8 +58,10 @@ Create an exercise
             Continue
           </button>
 
+          <!--END MAIN WRAPPER-->
         </div>
       </div>
+    </form>
   </main>
 
   {% include "includes/footer.html" %}

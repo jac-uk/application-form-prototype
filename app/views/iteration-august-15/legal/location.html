@@ -12,7 +12,7 @@ Create an exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="../dashboard" method="post">
+    <form class="form" action="jurisdictions" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
@@ -28,6 +28,12 @@ Create an exercise
                 Select all that apply
               </span>
               <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    All locations across England and Wales
+                  </label>
+                </div>
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
                   <label class="govuk-label govuk-checkboxes__label" for="waste">
@@ -70,7 +76,7 @@ Create an exercise
 
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Create exercise
+            Continue
           </button>
 
         </div>

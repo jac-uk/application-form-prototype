@@ -9,11 +9,10 @@ Create an exercise
 <div class="govuk-width-container">
 
   {% include "includes/header.html" %}
-  <a href="#" class="govuk-back-link">Back</a>
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="schedule" method="post">
+    <form class="form" action="expenses" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
@@ -22,7 +21,7 @@ Create an exercise
             <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
-                  Payment type
+                  Appointment type
                 </h1>
               </legend>
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
@@ -37,7 +36,7 @@ Create an exercise
                   id="conditional-how-contacted-conditional">
                   <div class="govuk-form-group">
                     <label class="govuk-label" for="contact-by-email">
-                      Yearly salary
+                      Salary
                     </label>
                     <input placeholder="£" class="govuk-input govuk-!-width-one-third" id="contact-by-email"
                       name="contact-by-email" type="email" spellcheck="false">
@@ -54,11 +53,18 @@ Create an exercise
                   id="conditional-how-contacted-conditional-2">
                   <div class="govuk-form-group">
                     <label class="govuk-label" for="contact-by-phone">
-                      Daily fee
+                      Fee
                     </label>
                     <input placeholder="£" class="govuk-input govuk-!-width-one-third" id="contact-by-phone"
                       name="contact-by-phone" type="tel">
                   </div>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio"
+                    value="phone">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+                    Unpaid
+                  </label>
                 </div>
               </div>
             </fieldset>

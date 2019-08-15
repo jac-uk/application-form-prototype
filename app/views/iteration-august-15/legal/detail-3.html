@@ -12,13 +12,12 @@ Create an exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="qualifications" method="post">
+    <form class="form" action="test" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
 
           <span class="govuk-caption-xl">003</span>
           <h1 class="govuk-heading-xl">Salaried Judge of the Upper Tribunal, Immigration and Asylum Chamber</h1>
-
           <!--TABLE-->
           <h2 class="govuk-heading-l">Role information</h2>
           <a href="#">Change</a>
@@ -62,7 +61,7 @@ Create an exercise
                 Jurisdictions
               </dt>
               <dd class="govuk-summary-list__value">
-                All England and Wales
+                Family
               </dd>
             </div>
           </div>
@@ -88,6 +87,7 @@ Create an exercise
               <dd class="govuk-summary-list__value">
                 No
               </dd>
+
             </div>
             <div class="govuk-summary-list__row">
               <dt class="govuk-summary-list__key">
@@ -120,16 +120,68 @@ Create an exercise
               </dd>
             </div>
           </div>
-          <!--BUTTON-->
-          <button type="submit" class="govuk-button" data-module="govuk-button">
-            Add eligibility information
-          </button>
+
+          <hr class="govuk-section-break govuk-section-break--visible">
+          <br><br>
 
         </div>
       </div>
-  </main>
 
-  {% include "includes/footer.html" %}
+      <h2 class="govuk-heading-l">Eligibility information</h2>
+
+      <div class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Eligible professions
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Barristers, Solicitors
+          </dd>
+        </div>
+      </div>
+      <div class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Post-qualification years
+          </dt>
+          <dd class="govuk-summary-list__value">
+            7
+          </dd>
+        </div>
+      </div>
+
+      <div class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Specific skills or experience (ASC)
+          </dt>
+          <dd class="govuk-summary-list__value">
+            No
+          </dd>
+        </div>
+      </div>
+
+      <div class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Reasonable length of service
+          </dt>
+          <dd class="govuk-summary-list__value">
+            4 years
+          </dd>
+        </div>
+      </div>
+
+      <!--BUTTON-->
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Add information about the selection process
+      </button>
+
+</div>
+</div>
+</main>
+
+{% include "includes/footer.html" %}
 
 </div>
 
