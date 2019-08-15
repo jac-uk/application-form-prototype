@@ -1,0 +1,37 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="exercise-type" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">Search results</h1>
+
+          <p class="govuk-body"><a href="applicant-detail">Jane Smith</a></p>
+          <p class="govuk-body"><a href="applicant-detail">Jane Smith</a></p>
+          <p class="govuk-body"><a href="applicant-detail">Jane Smith</a></p>
+          <p class="govuk-body"><a href="applicant-detail">Jane Smith</a></p>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
