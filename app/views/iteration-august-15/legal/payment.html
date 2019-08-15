@@ -16,98 +16,74 @@ Create an exercise
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <!--DATE-->
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                Salary
-              </legend>
-              <div class="govuk-date-input" id="passport-issued">
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                      Pounds
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day"
-                      name="passport-issued-day" type="number" pattern="[0-9]*">
-                  </div>
-                </div>
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                      Pence
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
-                      name="passport-issued-month" type="number" pattern="[0-9]*">
-                  </div>
-                </div>
+        </div>
 
-                <!--RADIO CONDITIONAL GROUP-->
-                <div class="govuk-form-group">
-                  <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
-                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                      <h1 class="govuk-fieldset__heading">
-                        Appointment type
-                      </h1>
-                    </legend>
-                    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                      <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted"
-                          type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional">
-                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
-                          Salaried
-                        </label>
-                      </div>
-                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
-                        id="conditional-how-contacted-conditional">
-                        <div class="govuk-form-group">
-                          <label class="govuk-label" for="contact-by-email">
-                            Salary
-                          </label>
-                          <input placeholder="£" class="govuk-input govuk-!-width-one-third" id="contact-by-email"
-                            name="contact-by-email" type="email" spellcheck="false">
-                        </div>
-                      </div>
-                      <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted"
-                          type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
-                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                          Fee paid
-                        </label>
-                      </div>
-                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
-                        id="conditional-how-contacted-conditional-2">
-                        <div class="govuk-form-group">
-                          <label class="govuk-label" for="contact-by-phone">
-                            Fee
-                          </label>
-                          <input placeholder="£" class="govuk-input govuk-!-width-one-third" id="contact-by-phone"
-                            name="contact-by-phone" type="tel">
-                        </div>
-                      </div>
-                      <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted"
-                          type="radio" value="phone">
-                        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
-                          Unpaid
-                        </label>
-                      </div>
-                    </div>
-                  </fieldset>
-                </div>
-
-                <!--BUTTON-->
-                <button type="submit" class="govuk-button" data-module="govuk-button">
-                  Continue
-                </button>
-
-                <!--END MAIN WRAPPER-->
+        <!--RADIO CONDITIONAL GROUP-->
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <h1 class="govuk-fieldset__heading">
+                Appointment type
+              </h1>
+            </legend>
+            <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
+                  value="email" data-aria-controls="conditional-how-contacted-conditional">
+                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                  Salaried
+                </label>
               </div>
-          </div>
-    </form>
-  </main>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                id="conditional-how-contacted-conditional">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-email">
+                    Salary
+                  </label>
+                  <input placeholder="£" class="govuk-input govuk-!-width-one-third" id="contact-by-email"
+                    name="contact-by-email" type="email" spellcheck="false">
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio"
+                  value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                  Fee paid
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                id="conditional-how-contacted-conditional-2">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-phone">
+                    Fee
+                  </label>
+                  <input placeholder="£" class="govuk-input govuk-!-width-one-third" id="contact-by-phone"
+                    name="contact-by-phone" type="tel">
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio"
+                  value="phone">
+                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+                  Unpaid
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
 
-  {% include "includes/footer.html" %}
+        <!--BUTTON-->
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+
+        <!--END MAIN WRAPPER-->
+      </div>
+</div>
+</form>
+</main>
+
+{% include "includes/footer.html" %}
 
 </div>
 
