@@ -18,8 +18,8 @@ Create an exercise
 
           <!--RADIO GROUP-->
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <fieldset class="govuk-fieldset" aria-describedby="additional-selection-conditional-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 <h1 class="govuk-fieldset__heading">
                   Additional selection criteria (ASC)
                 </h1>
@@ -27,18 +27,30 @@ Create an exercise
               <span id="event-name-hint" class="govuk-hint">
                 This is the specific skills or experience the candidate must have
               </span>
-              <div class="govuk-radios">
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
-                    value="england">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                  <input class="govuk-radios__input" id="additional-selection-conditional-3" name="additional-selection"
+                    type="radio" value="text" data-aria-controls="conditional-additional-selection-conditional-3">
+                  <label class="govuk-label govuk-radios__label" for="additional-selection-conditional-3">
                     Yes
                   </label>
                 </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                  id="conditional-additional-selection-conditional-3">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-!-font-weight-bold" for="contact-by-text">
+                      Detail of additional requirements
+                    </label>
+                    <div class="govuk-form-group">
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                        aria-describedby="more-detail-hint"></textarea>
+                    </div>
+                  </div>
+                </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
-                    value="scotland">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                  <input class="govuk-radios__input" id="additional-selection-conditional" name="additional-selection"
+                    type="radio" value="email" data-aria-controls="conditional-additional-selection-conditional">
+                  <label class="govuk-label govuk-radios__label" for="additional-selection-conditional">
                     No
                   </label>
                 </div>
