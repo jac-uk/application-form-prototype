@@ -4,12 +4,12 @@ const router = express.Router()
 // Add your routes here - above the module.exports line
 
 // Branching
-router.post('/iteration-august-15/legal/detail', function (req, res) {
+router.post('/iteration-august-15/legal/key-contacts', function (req, res) {
     let over18 = req.session.data['legal']
     if (over18 === 'false') {
-        res.redirect('/iteration-august-15/non-legal/detail')
+        res.redirect('/iteration-august-15/non-legal/key-contacts')
     } else {
-        res.redirect('/iteration-august-15/legal/detail')
+        res.redirect('/iteration-august-15/legal/key-contacts')
     }
 })
 
