@@ -12,16 +12,17 @@ Create an exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="payment" method="post">
+    <form class="form" action="location" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <!--TEXT INPUT-->
+          <!--TEXT AREA-->
           <div class="govuk-form-group">
-            <label class="govuk-heading-xl" for="exercise-name" style="margin-bottom:10px;">
-              Locations
+            <label class="govuk-fieldset__legend govuk-fieldset__legend--xl" for="more-detail">
+              Overview of the role
             </label>
-            <input class="govuk-input" id="exercise-name" name="exercise-name" type="text">
+            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="10"
+              aria-describedby="more-detail-hint"></textarea>
           </div>
 
           <!--BUTTON-->
