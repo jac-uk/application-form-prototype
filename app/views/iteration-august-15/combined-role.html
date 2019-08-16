@@ -74,11 +74,34 @@ Create an exercise
                 <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
                   id="conditional-how-contacted-conditional">
                   <div class="govuk-form-group">
-                    <label class="govuk-label" for="contact-by-email">
-                      Salary
-                    </label>
-                    <input placeholder="£" class="govuk-input govuk-!-width-one-third" id="contact-by-email"
-                      name="contact-by-email" type="email" spellcheck="false">
+
+                    <!--CURRENCY-->
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                        <label class="govuk-label" for="contact-by-email">
+                          Salary
+                        </label>
+                        <div class="govuk-date-input" id="passport-issued">
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-5"
+                                id="passport-issued-year" name="passport-issued-year" type="number" pattern="[0-9]*"
+                                placeholder="£">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <p class="govuk-body">.</p>
+                          </div>
+                          <div class="govuk-date-input__item" style="margin-right: 0.75rem;">
+                            <div class="govuk-form-group">
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                                id="passport-issued-hour" name="passport-issued-hour" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+
                   </div>
                 </div>
                 <div class="govuk-radios__item">
@@ -90,12 +113,31 @@ Create an exercise
                 </div>
                 <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
                   id="conditional-how-contacted-conditional-2">
+                  <!--CURRENCY-->
                   <div class="govuk-form-group">
-                    <label class="govuk-label" for="contact-by-phone">
-                      Fee
-                    </label>
-                    <input placeholder="£" class="govuk-input govuk-!-width-one-third" id="contact-by-phone"
-                      name="contact-by-phone" type="tel">
+                    <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+                      <label class="govuk-label" for="contact-by-email">
+                        Fee
+                      </label>
+                      <div class="govuk-date-input" id="passport-issued">
+                        <div class="govuk-date-input__item">
+                          <div class="govuk-form-group">
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-5"
+                              id="passport-issued-year" name="passport-issued-year" type="number" pattern="[0-9]*"
+                              placeholder="£">
+                          </div>
+                        </div>
+                        <div class="govuk-date-input__item">
+                          <p class="govuk-body">.</p>
+                        </div>
+                        <div class="govuk-date-input__item" style="margin-right: 0.75rem;">
+                          <div class="govuk-form-group">
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                              id="passport-issued-hour" name="passport-issued-hour" type="number" pattern="[0-9]*">
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
                   </div>
                 </div>
                 <div class="govuk-radios__item">
