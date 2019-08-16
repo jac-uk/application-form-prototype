@@ -112,6 +112,34 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   padding: 60px 10px 10px 10px;
 }
 
+.govuk-panel {
+  text-align: left;
+}
+
+.govuk-panel--highlight {
+  color: #ffffff;
+  background: #1d70b8;
+}
+
+.govuk-panel__title {
+  margin: 1.5rem 0 1.5rem;
+}
+
+
+.govuk-panel__body {
+  font-size: 1.75rem;
+}
+
+
+.govuk-panel--s {
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.govuk-panel--grey {
+  color: #0b0c0c;
+  background: #f3f2f1;
+}
 
 // Task list pattern
 

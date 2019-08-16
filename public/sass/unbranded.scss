@@ -92,6 +92,16 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   color: #0b0c0c;
 }
 
+@media (min-width: 40.0625em) {
+  .govuk-input--search {
+    width: 90%;
+  }
+}
+
+.govuk-input--search {
+  margin-bottom: 20px;
+}
+
 .govuk-footer {
   background-color: #f8f8f7;
   border-top: 1px solid #aca9a0;
@@ -113,12 +123,6 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 
   @include govuk-media-query($from: tablet) {
     min-width: 550px;
-  }
-}
-
-@media (min-width: 40.0625em) {
-  .app-task-list__items {
-    padding-left: 0;
   }
 }
 
