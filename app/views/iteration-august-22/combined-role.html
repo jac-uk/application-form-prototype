@@ -78,11 +78,24 @@ Create an exercise
                     Salaried
                   </label>
                 </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio"
+                    value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                    Fee paid
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio"
+                    value="phone">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+                    Unpaid
+                  </label>
+                </div>
+                <!--CONDITIONAL CURRENCY-->
                 <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
                   id="conditional-how-contacted-conditional">
                   <div class="govuk-form-group">
-
-                    <!--CURRENCY-->
                     <div class="govuk-form-group">
                       <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
                         <label class="govuk-fieldset__legend--s" for="contact-by-email">
@@ -91,6 +104,7 @@ Create an exercise
                         <div class="govuk-date-input" id="passport-issued">
                           <div class="govuk-date-input__item">
                             <div class="govuk-form-group">
+                              <span class="moj-label__currency">£test</span>
                               <input class="govuk-input govuk-date-input__input govuk-input--width-5"
                                 id="passport-issued-year" name="passport-issued-year" type="number" pattern="[0-9]*"
                                 placeholder="£">
@@ -108,19 +122,12 @@ Create an exercise
                         </div>
                       </fieldset>
                     </div>
-
                   </div>
                 </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio"
-                    value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
-                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                    Fee paid
-                  </label>
-                </div>
+
+                <!--RADIO CONDITIONAL GROUP-->
                 <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
                   id="conditional-how-contacted-conditional-2">
-                  <!--CURRENCY-->
                   <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
                       <label class="govuk-fieldset__legend--s" for="contact-by-email">
@@ -146,13 +153,6 @@ Create an exercise
                       </div>
                     </fieldset>
                   </div>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio"
-                    value="phone">
-                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
-                    Unpaid
-                  </label>
                 </div>
               </div>
             </fieldset>
