@@ -1,0 +1,81 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="detail-3" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--RADIO GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="reasonable-length-conditional-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Reasonable length of service
+                </h1>
+              </legend>
+              <span id="event-name-hint" class="govuk-hint">
+                This is the minimum number of years the candidate must work
+              </span>
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="reasonable-length-conditional-0" name="reasonable-length"
+                    type="radio" value="email" data-aria-controls="conditional-reasonable-length-conditional-0">
+                  <label class="govuk-label govuk-radios__label" for="reasonable-length-conditional-0">
+                    4 years
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="reasonable-length-conditional" name="reasonable-length"
+                    type="radio" value="email" data-aria-controls="conditional-reasonable-length-conditional">
+                  <label class="govuk-label govuk-radios__label" for="reasonable-length-conditional">
+                    5 years
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="reasonable-length-conditional-3" name="reasonable-length"
+                    type="radio" value="text" data-aria-controls="conditional-reasonable-length-conditional-3">
+                  <label class="govuk-label govuk-radios__label" for="reasonable-length-conditional-3">
+                    Other
+                  </label>
+                </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                  id="conditional-reasonable-length-conditional-3">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-!-font-weight-bold" for="contact-by-text">
+                      Number of years
+                    </label>
+                    <input class="govuk-input govuk-!-width-one-quarter" id="contact-by-text" name="contact-by-text"
+                      type="tel">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

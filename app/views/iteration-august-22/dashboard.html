@@ -1,0 +1,69 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Your exercises
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-full">
+        <div style="text-align:right;">
+          <a href="#" class="govuk-button govuk-button--secondary" style="margin-right: 0.75rem;">
+            View all exercises
+          </a>
+          <a href="combined-exercise" class="govuk-button govuk-!-margin-right-1">
+            Create an exercise
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl" style="margin-bottom: 1.5rem;">Your exercises</h1>
+      </div>
+    </div>
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <!--TABLE-->
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              <a href="detail">431</a>
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <a href="detail">Salaried Judge of the Upper Tribunal, Immigration and Asylum Chamber</a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              <a href="#">381</a>
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <a href="#">Fee-paid Valuer Chairmen and Fee-paid Valuer Members
+                of the First-tier Tribunal, Residential Property Tribunal</a>
+            </dd>
+
+          </div>
+        </dl>
+
+        <!--END MAIN WRAPPER-->
+      </div>
+    </div>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
