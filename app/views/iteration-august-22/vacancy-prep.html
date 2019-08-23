@@ -1,0 +1,46 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <!--PAGE TITLE-->
+        <h1 class="govuk-heading-xl">
+          Vacancy information
+        </h1>
+
+        <p class="govuk-body-l">If you have the vacancy request (VR) from HMCTS, you can add this information to the
+          exercise.</p>
+        <br>
+
+        <!--LINK-->
+        <p>
+          <a class="govuk-button" href="vacancy">Add vacancy information</a>
+        </p>
+
+        <!--LINK-->
+        <p>
+          <a class="govuk-body" href="eligibility-prep">I want to do this later</a>
+        </p>
+
+        <!--END MAIN WRAPPER-->
+      </div>
+    </div>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
