@@ -12,14 +12,28 @@ Create an exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <form action="/iteration-august-15/legal/key-contacts" method="post" class="form">
+    <form class="form" action="key-people" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <span class="govuk-caption-xl">Step X of X</span>
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Create an exercise
+          </h1>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-heading-m" for="exercise-name" style="margin-bottom:10px;">
+              Exercise name
+            </label>
+            <input class="govuk-input" id="exercise-name" name="exercise-name" type="text">
+          </div>
 
           <!--RADIO GROUP-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 <h2 class="govuk-fieldset__heading">
                   Type of exercise
                 </h2>
@@ -28,7 +42,13 @@ Create an exercise
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="legal-yes" name="legal" type="radio" value="true">
                   <label class="govuk-label govuk-radios__label" for="legal-yes">
-                    Legal
+                    Legal - court
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="legal-yes" name="legal" type="radio" value="true">
+                  <label class="govuk-label govuk-radios__label" for="legal-yes">
+                    Legal - tribunal
                   </label>
                 </div>
                 <div class="govuk-radios__item">
@@ -53,12 +73,15 @@ Create an exercise
             </fieldset>
           </div>
 
-          <button class="govuk-button">Create exercise</button>
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Add key people
+          </button>
 
-        </form>
-
+          <!--END MAIN WRAPPER-->
+        </div>
       </div>
-    </div>
+    </form>
   </main>
 
   {% include "includes/footer.html" %}

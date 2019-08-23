@@ -1,0 +1,154 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="timeline" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <span class="govuk-caption-xl">Step X of X</span>
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Add key people
+          </h1>
+
+
+          <!--TEXT INPUT-->
+          <h2 class="govuk-heading-l">
+            JAC contacts
+          </h2>
+
+          <div class="govuk-form-group">
+            <label class="govuk-heading-s" for="exercise-team" style="margin-bottom:10px;">
+              Assigned Commissioner
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body" style="margin-top:20px;">
+              <a href="#">Add another</a>
+            </p>
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-heading-s" for="exercise-team" style="margin-bottom:10px;">
+              Senior Selection Exercise Manager
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-heading-s" for="exercise-team" style="margin-bottom:10px;">
+              Selection Exercise Manager
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-heading-s" for="exercise-team" style="margin-bottom:10px;">
+              Selection Exercise Officer
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body" style="margin-top:20px;">
+              <a href="#">Add another</a>
+            </p>
+          </div>
+
+
+          <div class="govuk-form-group">
+            <label class="govuk-heading-s" for="exercise-team" style="margin-bottom:10px;">
+              Policy contact
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-heading-s" for="exercise-team" style="margin-bottom:10px;">
+              Equality and Diversity contact
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+          </div>
+
+          <h2 class="govuk-heading-l">
+            Other key contacts
+          </h2>
+
+          <div class="govuk-form-group">
+            <label class="govuk-heading-s" for="exercise-team" style="margin-bottom:10px;">
+              HMCTS or Welsh Government lead
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body" style="margin-top:20px;">
+            </p>
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-heading-s" for="exercise-team" style="margin-bottom:10px;">
+              Lead Judge
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-heading-s" for="exercise-team" style="margin-bottom:10px;">
+              Drafting Judge
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body" style="margin-top:20px;">
+              <a href="#">Add another</a>
+            </p>
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-heading-s" for="exercise-team" style="margin-bottom:10px;">
+              Judicial Office contact
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body" style="margin-top:20px;">
+            </p>
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-heading-s" for="exercise-team" style="margin-bottom:10px;">
+              Statutory Consultee
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body" style="margin-top:20px;">
+              <a href="#">Add another</a>
+            </p>
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-heading-s" for="exercise-team" style="margin-bottom:10px;">
+              Other stakeholders
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body" style="margin-top:20px;">
+              <a href="#">Add another</a>
+            </p>
+          </div>
+
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Add timeline
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

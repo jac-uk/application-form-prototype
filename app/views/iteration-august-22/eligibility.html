@@ -12,22 +12,24 @@ Create an exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="combined-selection" method="post">
+    <form class="form" action="detail" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <span class="govuk-caption-xl">Step 3 of 4</span>
+          <span class="govuk-caption-xl">Step X of X</span>
           <!--PAGE TITLE-->
           <h3 class="govuk-heading-xl">
             Eligibility
           </h3>
+          <p class="govuk-body-l">You'll find this information in the eligibility statement.</p>
+          <br>
 
           <!--CONDITIONAL CHECKBOX GROUP-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 <h1 class="govuk-fieldset__heading">
-                  Professions
+                  Qualifications
                 </h1>
               </legend>
               <span id="citizenship-conditional-hint" class="govuk-hint">
@@ -76,13 +78,10 @@ Create an exercise
                       Add details of other relevant professions, qualifications or experience
                     </label>
                     <span id="citizenship-conditional-hint" class="govuk-hint" style="margin-bottom:0px;">
-                      For example, Patent agent, Medical
+                      For example, chartered surveyor or medical experience
                     </span>
                     <input class="govuk-input govuk-!-width-full" id="contact-by-text" name="contact-by-text"
                       type="tel">
-                  </div>
-                  <div class="govuk-form-group">
-                    <a href="#">Add another</a>
                   </div>
                 </div>
 
@@ -177,19 +176,16 @@ Create an exercise
             </fieldset>
           </div>
 
-
-
-
           <!--CONDITIONAL RADIO GROUP-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="additional-selection-conditional-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 <h1 class="govuk-fieldset__heading">
-                  Additional selection criteria (ASC)
+                  Does additional selection criteria (ASC) apply?
                 </h1>
               </legend>
               <span id="event-name-hint" class="govuk-hint">
-                This is the specific skills or experience the candidate must have
+                This is also known as non-statutory eligibility requirements
               </span>
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
@@ -203,7 +199,7 @@ Create an exercise
                   id="conditional-additional-selection-conditional-3">
                   <div class="govuk-form-group">
                     <label class="govuk-label govuk-!-font-weight-bold" for="contact-by-text">
-                      Add the additional experience the candidate must have
+                      Details of the additional selection criteria
                     </label>
                     <div class="govuk-form-group">
                       <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
@@ -220,15 +216,6 @@ Create an exercise
                 </div>
               </div>
             </fieldset>
-          </div>
-
-          <!--TEXT INPUT-->
-          <div class="govuk-form-group">
-            <label class="govuk-heading-m" for="exercise-name">
-              Retirement age
-            </label>
-            <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text"><span
-              class="govuk-body" style="margin-left: 10px;">years old</span>
           </div>
 
           <!--CONDITIONAL RADIO GROUP-->
@@ -278,9 +265,21 @@ Create an exercise
             </fieldset>
           </div>
 
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-heading-m" for="exercise-name">
+              Retirement age
+            </label>
+            <span id="citizenship-conditional-hint" class="govuk-hint">
+              This is usually 70 years except in special circumstances
+            </span>
+            <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text"><span
+              class="govuk-body" style="margin-left: 10px;">years</span>
+          </div>
+
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Add selection process information
+            View exercise
           </button>
 
           <!--END MAIN WRAPPER-->
