@@ -12,7 +12,7 @@ Create an exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="eligibility" method="post">
+    <form class="form" action="eligibility-prep" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
@@ -26,7 +26,7 @@ Create an exercise
 
           <!--TEXT INPUT-->
           <div class="govuk-form-group">
-            <label class="govuk-heading-m" for="exercise-name" style="margin-bottom:10px;">
+            <label class="govuk-label-input" for="exercise-name">
               Location
             </label>
             <input class="govuk-input" id="exercise-name" name="exercise-name" type="text">
@@ -34,7 +34,7 @@ Create an exercise
 
           <!--TEXT INPUT-->
           <div class="govuk-form-group">
-            <label class="govuk-heading-m" for="exercise-name" style="margin-bottom:10px;">
+            <label class="govuk-label-input" for="exercise-name">
               Jurisdiction
             </label>
             <span id="event-name-hint" class="govuk-hint">
@@ -45,7 +45,7 @@ Create an exercise
 
 
 
-          <h2 class="govuk-heading-m">
+          <h2 class="govuk-label-input">
             Number of vacancies
           </h2>
           <!--TEXT INPUT-->
@@ -247,7 +247,7 @@ Create an exercise
           </div>
 
           <!--TEXT AREA-->
-          <p class="govuk-fieldset__legend govuk-fieldset__legend--m" style="margin-bottom:10px;">
+          <p class="govuk-fieldset__legend govuk-fieldset__legend--m">
             Job description
           </p>
           <span id="event-name-hint" class="govuk-hint">
@@ -258,8 +258,13 @@ Create an exercise
 
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Add eligibility information
+            Save and continue
           </button>
+
+          <!--LINK-->
+          <p>
+            <a class="govuk-body" href="eligibility-prep">I want to do this later</a>
+          </p>
 
           <!--END MAIN WRAPPER-->
         </div>

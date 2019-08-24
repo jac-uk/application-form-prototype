@@ -12,7 +12,7 @@ Create an exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="key-people" method="post">
+    <form class="form" action="timeline" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
@@ -24,7 +24,7 @@ Create an exercise
 
           <!--TEXT INPUT-->
           <div class="govuk-form-group">
-            <label class="govuk-heading-m" for="exercise-name" style="margin-bottom:10px;">
+            <label class="govuk-label-input" for="exercise-name">
               Exercise name
             </label>
             <input class="govuk-input" id="exercise-name" name="exercise-name" type="text">
@@ -73,9 +73,54 @@ Create an exercise
             </fieldset>
           </div>
 
+
+          <!--CONDITIONAL CHECKBOX GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Shortlisting methods (optional)
+                </h1>
+              </legend>
+              <span id="citizenship-conditional-hint" class="govuk-hint">
+                Select all that apply. You can also add these later.
+              </span>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                    Situational judgement qualifying test (QT)
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                    Critical analysis qualifying test (QT)
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                    Scenario test
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                    Paper sift
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Add team details
+            Save and continue - add timeline
           </button>
 
           <!--END MAIN WRAPPER-->
