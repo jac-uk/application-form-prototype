@@ -1,0 +1,176 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="shortlisting" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Create an exercise
+          </h1>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-name">
+              Exercise name
+            </label>
+            <input class="govuk-input" id="exercise-name" name="exercise-name" type="text">
+          </div>
+
+          <!--RADIO GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h2 class="govuk-fieldset__heading">
+                  Type of exercise
+                </h2>
+              </legend>
+              <div class="govuk-radios govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="legal-yes" name="legal" type="radio" value="true">
+                  <label class="govuk-label govuk-radios__label" for="legal-yes">
+                    Legal - court
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="legal-yes" name="legal" type="radio" value="true">
+                  <label class="govuk-label govuk-radios__label" for="legal-yes">
+                    Legal - tribunal
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="legal-no" name="legal" type="radio" value="false" disabled>
+                  <label class="govuk-label govuk-radios__label" for="legal-no">
+                    Non legal
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="legal-no" name="legal" type="radio" value="false" disabled>
+                  <label class="govuk-label govuk-radios__label" for="legal-no" disabled>
+                    Senior
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="legal-no" name="legal" type="radio" value="false" disabled>
+                  <label class="govuk-label govuk-radios__label" for="legal-no" disabled>
+                    Leadership
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <!--RADIO CONDITIONAL GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Would you like to add further detail about this exercise?
+                </h1>
+                <span id="waste-hint" class="govuk-hint">
+                  For example, shortlisting methods, key contacts, timeline, or information from HMCTS.
+                </span>
+              </legend>
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
+                    value="email" data-aria-controls="conditional-how-contacted-conditional">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                    Yes
+                  </label>
+                </div>
+                <!--CONDITIONAL CURRENCY-->
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                  id="conditional-how-contacted-conditional">
+                  <!--CHECKBOX GROUP-->
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                        <h1 class="govuk-fieldset__heading">
+                          What information would you like to add?
+                        </h1>
+                      </legend>
+                      <span id="waste-hint" class="govuk-hint">
+                        Select all that apply. You can also add this later.
+                      </span>
+                      <div class="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox"
+                            value="carcasses">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste">
+                            Shortlisting methods
+                          </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox"
+                            value="mines">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                            Timeline
+                          </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox"
+                            value="mines">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                            Key contacts
+                          </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox"
+                            value="mines">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                            Vacancy information
+                          </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox"
+                            value="mines">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                            Eligibility information
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio"
+                    value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                    No - I will add this later
+                  </label>
+                </div>
+            </fieldset>
+          </div>
+
+
+
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
