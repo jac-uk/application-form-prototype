@@ -54,7 +54,7 @@ Create an exercise
               Immediate start
             </label>
             <span id="event-name-hint" class="govuk-hint">
-              These are also called section 87 (S87) vacancies.
+              These are also called Section 87 (S87) vacancies.
             </span>
             <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text">
           </div>
@@ -65,7 +65,7 @@ Create an exercise
               Future start
             </label>
             <span id="event-name-hint" class="govuk-hint">
-              These are also called section 94 (S94) vacancies.
+              These are also called Section 94 (S94) vacancies.
             </span>
             <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text">
           </div>
@@ -186,7 +186,7 @@ Create an exercise
                   id="conditional-additional-selection-conditional-2">
                   <div class="govuk-form-group">
                     <label class="govuk-label govuk-!-font-weight-bold" for="contact-by-text">
-                      Add SPTW details
+                      Add details
                     </label>
                     <div class="govuk-form-group">
                       <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
@@ -247,6 +247,33 @@ Create an exercise
           </div>
 
           <!--TEXT AREA-->
+
+          <!--NICKED FROM DWP-->
+          <form action="/wcv5/add-clerical-upload-evidence" method="post">
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                  <h2 class="govuk-fieldset__heading">
+                    Job description
+                  </h2>
+                </legend>
+                <div class="govuk-form-group">
+
+                  <span id="event-name-hint" class="govuk-hint">
+                    Upload the job description document from HMCTS.
+                  </span>
+
+                  <input class="govuk-file-upload" id="file-upload-0" name="file-upload-0" type="file">
+                </div>
+              </fieldset>
+            </div>
+
+
+
+          </form>
+
+          <!-- <old upload>
           <p class="govuk-fieldset__legend govuk-fieldset__legend--m" style="margin-bottom:10px;">
             Job description
           </p>
@@ -255,11 +282,12 @@ Create an exercise
           </span>
           <p class="govuk-body"><a href="#">Upload</a></p>
           <br>
+</old upload> -->
 
-          <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
             Add eligibility information
           </button>
+
 
           <!--END MAIN WRAPPER-->
         </div>
