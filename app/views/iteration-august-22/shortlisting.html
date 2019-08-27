@@ -12,33 +12,31 @@ Create an exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="vacancy-prep" method="post">
+    <form class="form" action="shortlisting-timeline-qt" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-
-
           <!--CONDITIONAL CHECKBOX GROUP-->
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
+            <fieldset class="govuk-fieldset" aria-describedby="shortlisting-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
-                  Add shortlisting method
+                  Add shortlisting methods
                 </h1>
               </legend>
-              <span id="citizenship-conditional-hint" class="govuk-hint">
-                Select all that apply.
+              <span id="shortlisting-hint" class="govuk-hint">
+                Select all that apply
               </span>
               <div class="govuk-checkboxes" data-module="govuk-checkboxes">
                 <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox"
-                    value="text message" data-aria-controls="conditional-citizenship-conditional-3">
-                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
-                    Qualifying tests (QTs)
+                  <input class="govuk-checkboxes__input" id="shortlisting-3" name="citizen" type="checkbox"
+                    value="text message" data-aria-controls="conditional-shortlisting-3">
+                  <label class="govuk-label govuk-checkboxes__label" for="shortlisting-3">
+                    Qualifying tests (QT)
                   </label>
                 </div>
                 <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
-                  id="conditional-citizenship-conditional-3">
+                  id="conditional-shortlisting-3">
                   <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
@@ -49,7 +47,7 @@ Create an exercise
                           <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox"
                             value="carcasses">
                           <label class="govuk-label govuk-checkboxes__label" for="waste">
-                            Situational judgment
+                            Situational judgement
                           </label>
                         </div>
                         <div class="govuk-checkboxes__item">
@@ -70,31 +68,19 @@ Create an exercise
                   </div>
                 </div>
                 <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
-                    value="email" data-aria-controls="conditional-citizenship-conditional">
-                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                  <input class="govuk-checkboxes__input" id="shortlisting" name="citizen" type="checkbox" value="email"
+                    data-aria-controls="conditional-shortlisting">
+                  <label class="govuk-label govuk-checkboxes__label" for="shortlisting">
                     Paper sift
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
-                    value="email" data-aria-controls="conditional-citizenship-conditional">
-                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
-                    No shortlisting
                   </label>
                 </div>
               </div>
             </fieldset>
           </div>
-
-
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Add HMCTS information
+            Save and continue
           </button>
-          <a href="detail" class="govuk-button govuk-button--secondary" style="margin-right: 0.75rem;">
-            Add HMCTS information later
-          </a>
 
           <!--END MAIN WRAPPER-->
         </div>
