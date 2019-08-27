@@ -12,70 +12,49 @@ Create an exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="pqe" method="post">
+    <form class="form" action="timeline" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <!--CHECKBOX GROUP-->
+          <!--CONDITIONAL CHECKBOX GROUP-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
-                  Professions
+                  Add shortlisting methods
                 </h1>
               </legend>
               <span id="citizenship-conditional-hint" class="govuk-hint">
-                Select all that apply
+                Select all that apply. You can also add these later.
               </span>
               <div class="govuk-checkboxes" data-module="govuk-checkboxes">
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
                     value="email" data-aria-controls="conditional-citizenship-conditional">
                   <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
-                    Advocate (enrolled with the Scottish bar)
+                    Situational judgement qualifying test (QT)
                   </label>
                 </div>
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
                     value="email" data-aria-controls="conditional-citizenship-conditional">
                   <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
-                    Barrister
+                    Critical analysis qualifying test (QT)
                   </label>
                 </div>
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
                     value="email" data-aria-controls="conditional-citizenship-conditional">
                   <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
-                    CILEx
+                    Scenario test
                   </label>
                 </div>
                 <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox"
-                    value="phone" data-aria-controls="conditional-citizenship-conditional-2">
-                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
-                    Solicitor
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                    Paper sift
                   </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox"
-                    value="text message" data-aria-controls="conditional-citizenship-conditional-3">
-                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
-                    Other
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
-                  id="conditional-citizenship-conditional-3">
-                  <div class="govuk-form-group">
-                    <label class="govuk-fieldset__legend--s" for="contact-by-text">
-                      Add details of other relevant professions, qualifications or experience
-                    </label>
-                    <span id="citizenship-conditional-hint" class="govuk-hint" style="margin-bottom:0px;">
-                      For example, Patent agent, Medical
-                    </span>
-                    <input class="govuk-input govuk-!-width-full" id="contact-by-text" name="contact-by-text"
-                      type="tel">
-                  </div>
-
                 </div>
               </div>
             </fieldset>
@@ -83,12 +62,13 @@ Create an exercise
 
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Continue
+            Save and continue
           </button>
 
           <!--END MAIN WRAPPER-->
         </div>
       </div>
+    </form>
   </main>
 
   {% include "includes/footer.html" %}
