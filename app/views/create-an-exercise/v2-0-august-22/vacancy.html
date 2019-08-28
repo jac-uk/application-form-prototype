@@ -24,12 +24,31 @@ Create an exercise
           <p class="govuk-body-l">You'll find this information in the vacancy request (VR) from HMCTS.</p>
           <br>
 
-          <!--TEXT INPUT-->
+          <!--RADIO GROUP-->
           <div class="govuk-form-group">
-            <label class="govuk-label-input" for="exercise-name">
-              Location
-            </label>
-            <input class="govuk-input" id="exercise-name" name="exercise-name" type="text">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Is the vacancy for a court or tribunal?
+                </h1>
+              </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    Court
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    Tribunal
+                  </label>
+                </div>
+              </div>
+            </fieldset>
           </div>
 
           <!--TEXT INPUT-->
@@ -43,7 +62,13 @@ Create an exercise
             <input class="govuk-input" id="exercise-name" name="exercise-name" type="text">
           </div>
 
-
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-name">
+              Location
+            </label>
+            <input class="govuk-input" id="exercise-name" name="exercise-name" type="text">
+          </div>
 
           <h2 class="govuk-label-input">
             Number of vacancies
@@ -153,7 +178,6 @@ Create an exercise
                       </div>
                   </div>
                 </div>
-
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio"
                     value="phone">
@@ -161,10 +185,8 @@ Create an exercise
                     Unpaid
                   </label>
                 </div>
-
             </fieldset>
           </div>
-
 
           <!--CONDITIONAL RADIO GROUP-->
           <div class="govuk-form-group">
