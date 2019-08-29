@@ -16,53 +16,77 @@ Create an exercise
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <!--CONDITIONAL CHECKBOX GROUP-->
           <h1 class="govuk-heading-xl">
             Add shortlisting methods
           </h1>
           <p class="govuk-body-l">You can return to this page later
             to add or change methods.</p>
 
+          <!--CONDITIONAL CHECKBOX GROUP-->
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="shortlisting-hint">
+            <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-
               </legend>
-              <span id="shortlisting-hint" class="govuk-hint">
-                Select all that apply.
-              </span>
               <div class="govuk-checkboxes" data-module="govuk-checkboxes">
                 <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="shortlisting" name="citizen" type="checkbox"
-                    value="text message" data-aria-controls="conditional-shortlisting">
-                  <label class="govuk-label govuk-checkboxes__label" for="shortlisting">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
                     Situational judgment test
                   </label>
                 </div>
                 <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="shortlisting-2" name="citizen" type="checkbox"
-                    value="email" data-aria-controls="conditional-shortlisting-2">
-                  <label class="govuk-label govuk-checkboxes__label" for="shortlisting-2">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
                     Critical analysis test
                   </label>
                 </div>
                 <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="shortlisting-3" name="citizen" type="checkbox"
-                    value="email" data-aria-controls="conditional-shortlisting-3">
-                  <label class="govuk-label govuk-checkboxes__label" for="shortlisting-3">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
                     Scenario test
                   </label>
                 </div>
                 <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="shortlisting-4" name="citizen" type="checkbox"
-                    value="email" data-aria-controls="conditional-shortlisting-4">
-                  <label class="govuk-label govuk-checkboxes__label" for="shortlisting-4">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox"
+                    value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
                     Paper sift
                   </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox"
+                    value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                    Telephone assessment
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox"
+                    value="text message" data-aria-controls="conditional-citizenship-conditional-3">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
+                    Other
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
+                  id="conditional-citizenship-conditional-3">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="contact-by-text">
+                      Add method
+                    </label>
+                    <input class="govuk-input" id="contact-by-text" name="contact-by-text" type="tel">
+                    <p class="govuk_body" style="margin-top: 20px;">
+                      <a href="#">Add another</a>
+                    </p>
+                  </div>
+
                 </div>
               </div>
             </fieldset>
           </div>
+
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
             Save and continue
