@@ -30,13 +30,14 @@ Create an exercise
             JAC contacts
           </h2>
 
-          <!--TEXT INPUT-->
+          <!--mailbox
           <div class="govuk-form-group">
             <label class="govuk-label-input" for="exercise-team">
               Exercise mailbox
             </label>
             <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
           </div>
+         -->
 
 
           <!--TEXT INPUT-->
@@ -98,39 +99,39 @@ Create an exercise
             Other contacts
           </h2>
 
+
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
                   Appropriate Authority
                 </h1>
               </legend>
-              <div class="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio"
-                    value="england">
-                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+              <span id="waste-hint" class="govuk-hint">
+                Select all that apply.
+              </span>
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
                     Lord Chancellor
                   </label>
                 </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
-                    value="scotland">
-                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
                     Lord Chief Justice
                   </label>
                 </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio"
-                    value="wales">
-                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
                     Senior President of Tribunals
                   </label>
                 </div>
               </div>
             </fieldset>
           </div>
-
           <!--TEXT INPUT-->
           <div class="govuk-form-group">
             <label class="govuk-label-input" for="exercise-team">
@@ -181,7 +182,7 @@ Create an exercise
             </p>
           </div>
 
-          <!--TEXT INPUT-->
+          <!--TEXT INPUT
           <div class="govuk-form-group">
             <label class="govuk-label-input" for="exercise-team">
               Other stakeholders

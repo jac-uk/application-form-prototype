@@ -19,16 +19,16 @@ Create an exercise
 
           <!--PAGE TITLE-->
           <h1 class="govuk-heading-xl">
-            Add timeline
+            Add exercise timeline
           </h1>
 
           <p class="govuk-body-l">You can return to this page later
             to add or change dates.</p>
           <br>
 
-          <p><a href="live-dates" target="blank">View key dates of other exercises.</a> <span id="event-name-hint"
+          <p><a href="live-dates" target="blank">View key dates of all JAC exercises.</a> <span id="event-name-hint"
               class="govuk-hint">
-              This can help you plan your own key dates (details will open in a new tab).
+              This can help you plan your own key dates (opens in a new tab).
             </span></p>
           <br>
 
@@ -113,12 +113,19 @@ Create an exercise
             </fieldset>
           </div>
 
+
+
+
+
           <div class="govuk-form-group">
             <p class="govuk-heading-l">Situational judgment test, Critical analysis test</p>
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                Test date
+                Test date and time
               </legend>
+              <span id="waste-hint" class="govuk-hint">
+                For example, 31 05 2020 at 09:00
+              </span>
               <div class="govuk-date-input" id="passport-issued">
                 <div class="govuk-date-input__item">
                   <div class="govuk-form-group">
@@ -147,10 +154,37 @@ Create an exercise
                       name="passport-issued-year" type="number" pattern="[0-9]*">
                   </div>
                 </div>
+                <div class="govuk-date-input__item">
+                  <p class="govuk-body">at</p>
+                </div>
+                <div class="govuk-date-input__item" style="margin-right: 0.75rem;">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-hour">
+                      Hour
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-hour"
+                      name="passport-issued-hour" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item" style="margin-right: 0.75rem;">
+                  <p class="govuk-body" style="display: inline;">:</p>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-minute">
+                      Minute
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-minute"
+                      name="passport-issued-minute" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
               </div>
-              <br>
-              </details>
+            </fieldset>
           </div>
+
+
+
+
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
