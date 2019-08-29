@@ -31,111 +31,68 @@ Create an exercise
 
       <div class="govuk-grid-row">
 
-
-        <div class="col-container">
-          <div class="col">
-            <h2>Column 1</h2>
-            <p>Hello World</p>
-          </div>
-
-          <div class="col">
-            <h2>Column 2</h2>
-            <p>Hello World!</p>
-            <p>Hello World!</p>
-            <p>Hello World!</p>
-            <p>Hello World!</p>
-          </div>
-
-          <div class="col">
-            <h2>Column 3</h2>
-            <p>Some other text..</p>
-            <p>Some other text..</p>
-          </div>
-        </div>
-
-      </div>
-
-
-      <div class="govuk-grid-row">
-
         <div class="panel-container">
-          <div class="govuk-grid-column-one-third">
+          <div class="govuk-grid-column-two-thirds">
             <!--GREY PANEL-->
             <div class="govuk-panel--s govuk-panel--grey">
               <span class="govuk-panel__body">Number of vacancies</span>
               <h1 class="govuk-panel__title">90</h1>
             </div>
-          </div>
-
-          <div class="govuk-grid-column-one-third">
             <!--GREY PANEL-->
             <div class="govuk-panel--s govuk-panel--grey">
               <span class="govuk-panel__body">Number of applications</span>
               <h1 class="govuk-panel__title">76</h1>
               <span class="govuk-body"><a href="#">View applications</a></span>
             </div>
+            <br>
+            <!--AT A GLANCE INFO-->
+            <h2 class="govuk-heading-m" style="margin-bottom:0px;">Senior Selection Exercise Manager
+            </h2>
+            <p class="govuk-body">Phillippa Samuels<br>
+              <a href="#">phillippa.samuels@jac.gov.uk</a></a><br>0208 123 4567</p>
           </div>
 
           <div class="govuk-grid-column-one-third">
             <!--BLUE PANEL-->
             <div class="govuk-panel--s govuk-panel--highlight">
-              <span class="govuk-panel__body">Open for applications</span>
-              <div class="govuk-panel__body">
-                14 working days left
+              <div class="govuk-panel__body--s">
+                STATUS
               </div>
+              <span class="govuk-panel__body">Open for applications</span>
             </div>
+            <!--TIMELINE-->
+            <ol class="dwp-timeline govuk-list">
+              <li class="dwp-timeline__entry" style="margin-top: 0px;">
+                <h3 class="govuk-heading-s" style="margin-bottom: 5px;">Closed for applications</h3>
+                <p class="dwp-timeline__info"><span class="dwp-timeline__date">6 August 2019</span></p>
+              </li>
+              <li class="dwp-timeline__entry">
+                <h3 class="govuk-heading-s" style="margin-bottom: 5px;">Situational judgment test, Critical analysis
+                  test
+                </h3>
+                <p class="dwp-timeline__info"><span class="dwp-timeline__date">17 September 2019</span></p>
+              </li>
+            </ol>
+
+            <!--LINK-->
+            <p class="govuk-body"><a target="blank"
+                href="https://www.judicialappointments.gov.uk/138-deputy-judge-upper-tribunal-immigration-and-asylum-chamber-information-page">
+                View info page
+              </a></p>
+            <p class="govuk-body">
+              <a target="blank"
+                href="https://www.judicialappointments.gov.uk/138-deputy-judge-upper-tribunal-immigration-and-asylum-chamber-information-page">
+                View application form
+              </a>
+            </p>
+            <button type="submit" class="govuk-button govuk-button--warning" data-module="govuk-button">
+              Delete exercise
+            </button>
+
           </div>
 
         </div>
       </div>
-
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-full">
-
-
-          <!--TIMELINE-->
-          <ol class="dwp-timeline govuk-list">
-            <li class="dwp-timeline__entry" style="margin-top: 0px;">
-              <h3 class="govuk-heading-s" style="margin-bottom: 5px;">Closed for applications</h3>
-              <p class="dwp-timeline__info"><span class="dwp-timeline__date">6 August 2019</span></p>
-            </li>
-            <li class="dwp-timeline__entry">
-              <h3 class="govuk-heading-s" style="margin-bottom: 5px;">Situational judgment test, Critical analysis test
-              </h3>
-              <p class="dwp-timeline__info"><span class="dwp-timeline__date">17 September 2019</span></p>
-            </li>
-          </ol>
-          <!--TIMELINE-->
-
-          <h2 class="govuk-heading-m">Senior Selection Exercise Manager
-          </h2>
-          <p class="govuk-body">Sally Senior</p>
-
-          <p class="govuk-body"><a target="blank"
-              href="https://www.judicialappointments.gov.uk/138-deputy-judge-upper-tribunal-immigration-and-asylum-chamber-information-page">
-              View info page
-            </a></p>
-          <p class="govuk-body">
-            <a target="blank"
-              href="https://www.judicialappointments.gov.uk/138-deputy-judge-upper-tribunal-immigration-and-asylum-chamber-information-page">
-              View application form
-            </a>
-          </p>
-
-        </div>
-      </div>
-
-
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-        </div>
-
-        <div class="govuk-grid-column-two-thirds">
-        </div>
-
-      </div>
-
-
 
       <!--TABS-->
       <div class="govuk-tabs" data-module="govuk-tabs">
@@ -144,33 +101,38 @@ Create an exercise
         </h2>
         <ul class="govuk-tabs__list">
           <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-            <a class="govuk-tabs__tab" href="#past-day">
+            <a class="govuk-tabs__tab" href="#exercise-contacts">
               Exercise contacts
             </a>
           </li>
           <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#past-week">
-              Timeline dates
+            <a class="govuk-tabs__tab" href="#shortlisting-methods">
+              Shortlisting methods
             </a>
           </li>
           <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#past-month">
+            <a class="govuk-tabs__tab" href="#timeline">
+              Timeline
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#vacancy-information">
               Vacancy information
             </a>
           </li>
           <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#past-year">
+            <a class="govuk-tabs__tab" href="#eligibility-information">
               Eligibility information
             </a>
           </li>
         </ul>
 
         <!--TAB CONTACTS-->
-        <section class="govuk-tabs__panel" id="past-day">
+        <section class="govuk-tabs__panel" id="exercise-contacts">
 
           <!--LINK-->
           <div style="text-align: right;">
-            <a href="#" class="govuk-body">Update exercise contacts</a>
+            <a href="/create-an-exercise/v2-0-august-22/key-people" class="govuk-body">Update exercise contacts</a>
           </div>
 
           <!--HEADER-->
@@ -182,8 +144,20 @@ Create an exercise
           <table class="govuk-table">
             <tbody class="govuk-table__body">
               <tr class="govuk-table__row">
-                <th class="govuk-table__header">Policy contact</th>
-                <td class="govuk-table__cell">Iona Wainwright</td>
+                <th class="govuk-table__header" width="50%">Policy contact</th>
+                <td class="govuk-table__cell">
+                  <details class="govuk-details" data-module="govuk-details" style="margin-bottom:0px;">
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        Iona Wainwright
+                      </span>
+                    </summary>
+                    <div class="govuk-details__text">
+                      <a href="#">iona.waitwright@jac.gov.uk</a><br>
+                      0208 123 4567
+                    </div>
+                  </details>
+                </td>
               </tr>
               <tr class="govuk-table__row">
                 <th class="govuk-table__header">Equality and diversity contact</th>
@@ -247,12 +221,35 @@ Create an exercise
 
         </section>
 
-        <!--TAB TIMELINE-->
-        <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+        <!--TAB SHORTLISTING-->
+        <section class="govuk-tabs__panel" id="shortlisting-methods">
 
           <!--LINK-->
           <div style="text-align: right;">
-            <a href="#" class="govuk-body">Update timeline</a>
+            <a href="/create-an-exercise/v2-0-august-22/shortlisting" class="govuk-body">Update shortlisting methods</a>
+          </div>
+
+          <!--HEADER-->
+          <h2 class="govuk-heading-l">Shortlisting methods</h2>
+
+          <!--TABLE-->
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header">Shortlisting methods</th>
+                <td class="govuk-table__cell">Situational judgment test<br>Critical analysis test<br>Scenario test</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </section>
+
+        <!--TAB TIMELINE-->
+        <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="timeline">
+
+          <!--LINK-->
+          <div style="text-align: right;">
+            <a href="/create-an-exercise/v2-0-august-22/timeline-qt" class="govuk-body">Update timeline</a>
           </div>
 
           <!--HEADER-->
@@ -263,7 +260,12 @@ Create an exercise
         </section>
 
         <!--TAB VACANCY-->
-        <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+        <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="vacancy-information">
+
+          <!--LINK-->
+          <div style="text-align: right;">
+            <a href="/create-an-exercise/v2-0-august-22/vacancy" class="govuk-body">Update vacancy information</a>
+          </div>
 
           <!--HEADER-->
           <h2 class="govuk-heading-l">Vacancy information</h2>
@@ -324,7 +326,13 @@ Create an exercise
         </section>
 
         <!--TAB ELIGIBILITY-->
-        <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year">
+        <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="eligibility-information">
+
+          <!--LINK-->
+          <div style="text-align: right;">
+            <a href="/create-an-exercise/v2-0-august-22/eligibility" class="govuk-body">Update eligibility
+              information</a>
+          </div>
 
           <!--HEADER-->
           <h2 class="govuk-heading-l">Eligibility information</h2>
