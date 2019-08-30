@@ -91,27 +91,38 @@ Create an exercise
             </fieldset>
           </div>
 
-          <!--TEXT INPUT-->
+          <!--TEXT AREA-->
+
           <div class="govuk-form-group">
-            <label class="govuk-label-input" for="exercise-name">
+            <label class="govuk-label" for="more-detail">
               Jurisdiction
             </label>
-            <span id="event-name-hint" class="govuk-hint">
-              For example, Employment.
-            </span>
-            <input class="govuk-input" id="exercise-name" name="exercise-name" type="text">
+            <span id="more-detail-hint" class="govuk-hint">
+              For example, Employment. </span>
+            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+              aria-describedby="more-detail-hint"></textarea>
           </div>
 
-          <!--TEXT INPUT-->
+          <!--TEXT AREA-->
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="more-detail">
+              Location
+            </label>
+            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+              aria-describedby="more-detail-hint"></textarea>
+          </div>
+
+
+
+          <!--TEXT INPUT
           <div class="govuk-form-group">
             <label class="govuk-label-input" for="exercise-name">
               Location
             </label>
             <input class="govuk-input" id="exercise-name" name="exercise-name" type="text">
-            <p class="govuk_body" style="margin-top: 20px;">
-              <a href="#">Add another</a>
-            </p>
           </div>
+          -->
 
           <h2 class="govuk-label-input">
             Number of vacancies
@@ -323,56 +334,41 @@ Create an exercise
           </div>
 
           <!--NICKED FROM DWP-->
-          <form action="/wcv5/add-clerical-upload-evidence" method="post">
-
-            <div class="govuk-form-group">
-              <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
-                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                  <h2 class="govuk-fieldset__heading">
-                    Job description
-                  </h2>
-                </legend>
-                <div class="govuk-form-group">
-
-                  <span id="event-name-hint" class="govuk-hint">
-                    Upload the job description document from HMCTS.
-                  </span>
-
-                  <input class="govuk-file-upload" id="file-upload-0" name="file-upload-0" type="file">
-                </div>
-              </fieldset>
-            </div>
 
 
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h2 class="govuk-fieldset__heading">
+                  Upload HMCTS documents
+                </h2>
+              </legend>
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="event-name">
+                  Upload job description
+                </label>
+                <input class="govuk-file-upload" id="file-upload-0" name="file-upload-0" type="file">
+              </div>
+            </fieldset>
+          </div>
+    </form>
 
-          </form>
-          <form action="/wcv5/add-clerical-upload-evidence" method="post">
-
-            <div class="govuk-form-group">
-              <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
-                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                  <h2 class="govuk-fieldset__heading">
-                    Terms and conditions
-                  </h2>
-                </legend>
-                <div class="govuk-form-group">
-
-                  <span id="event-name-hint" class="govuk-hint">
-                    Upload the terms and conditions document from HMCTS.
-                  </span>
-
-                  <input class="govuk-file-upload" id="file-upload-0" name="file-upload-0" type="file">
-                </div>
-              </fieldset>
-            </div>
+    <form action="/wcv5/add-clerical-upload-evidence" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Upload terms and conditions
+            </label>
+            <input class="govuk-file-upload" id="file-upload-0" name="file-upload-0" type="file">
+          </div>
+        </fieldset>
+      </div>
+    </form>
 
 
 
-          </form>
-
-
-
-          <!-- <old upload>
+    <!-- <old upload>
           <p class="govuk-fieldset__legend govuk-fieldset__legend--m" style="margin-bottom:10px;">
             Job description
           </p>
@@ -383,17 +379,17 @@ Create an exercise
           <br>
 </old upload> -->
 
-          <button type="submit" class="govuk-button" data-module="govuk-button">
-            Save and continue
-          </button>
+    <button type="submit" class="govuk-button" data-module="govuk-button">
+      Save and continue
+    </button>
 
-          <!--END MAIN WRAPPER-->
-        </div>
-      </div>
-    </form>
-  </main>
+    <!--END MAIN WRAPPER-->
+</div>
+</div>
+</form>
+</main>
 
-  {% include "includes/footer.html" %}
+{% include "includes/footer.html" %}
 
 </div>
 
