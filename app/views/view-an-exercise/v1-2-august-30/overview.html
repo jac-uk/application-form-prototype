@@ -1,0 +1,86 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <span class="govuk-caption-xl">118<strong class="govuk-tag__exercise-type">
+            Legal
+          </strong></span>
+        <h1 class="govuk-heading-xl">Senior circuit judge of the Employment Appeal Tribunal
+        </h1>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-quarter">
+        {% include "includes/side-nav.html" %}
+      </div>
+
+      <div class="govuk-grid-column-three-quarters">
+
+        <div class="govuk-grid-column-one-half">
+
+          <!--GREY PANEL-->
+          <div class="govuk-panel--s govuk-panel--grey">
+            <span class="govuk-panel__body">Number of vacancies</span>
+            <h1 class="govuk-panel__title">90</h1>
+          </div>
+          <!--GREY PANEL-->
+          <div class="govuk-panel--s govuk-panel--grey">
+            <span class="govuk-panel__body">Number of applications</span>
+            <h1 class="govuk-panel__title">76</h1>
+            <span class="govuk-body"><a href="#">View applications</a></span>
+          </div>
+
+        </div>
+
+        <div class="govuk-grid-column-one-half">
+
+          <!--BLUE PANEL-->
+          <div class="govuk-panel--s govuk-panel--highlight">
+            <div class="govuk-panel__body--s">
+              STATUS
+            </div>
+            <span class="govuk-panel__body">Open for applications</span>
+          </div>
+          <!--TIMELINE-->
+          <ol class="dwp-timeline govuk-list">
+            <li class="dwp-timeline__entry" style="margin-top: 0px;">
+              <h3 class="govuk-heading-s" style="margin-bottom: 5px;">Closed for applications</h3>
+              <p class="dwp-timeline__info"><span class="dwp-timeline__date">6 August 2019</span></p>
+            </li>
+            <li class="dwp-timeline__entry">
+              <h3 class="govuk-heading-s" style="margin-bottom: 5px;">Situational judgment test, Critical analysis
+                test
+              </h3>
+              <p class="dwp-timeline__info"><span class="dwp-timeline__date">17 September 2019</span></p>
+            </li>
+            <li class="dwp-timeline__entry">
+              <p class="govuk-body"><a href="detail#timeline">View timeline</a></p>
+            </li>
+          </ol>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

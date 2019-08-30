@@ -1,0 +1,60 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <span class="govuk-caption-xl">118<strong class="govuk-tag__exercise-type">
+            Legal
+          </strong></span>
+        <h1 class="govuk-heading-xl">Senior circuit judge of the Employment Appeal Tribunal
+        </h1>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-quarter">
+        {% include "includes/side-nav.html" %}
+      </div>
+
+      <div class="govuk-grid-column-three-quarters">
+
+        <!--LINK-->
+        <div style="text-align: right;">
+          <a href="/create-an-exercise/v2-0-august-22/shortlisting" class="govuk-body">Update shortlisting
+            methods</a>
+        </div>
+        <!--HEADER-->
+        <h2 class="govuk-heading-l">Shortlisting methods</h2>
+
+        <!--TABLE-->
+        <table class="govuk-table">
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">Shortlisting methods</th>
+              <td class="govuk-table__cell">Situational judgment test<br>Critical analysis test</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
