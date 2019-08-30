@@ -1,0 +1,49 @@
+<ul class="dwp-vertical-navigation">
+  <li>
+    <a {% if getData.current === "overview" %} aria-current="page" {% endif %} href="overview?current=overview">
+      Overview
+    </a>
+  </li>
+  <li>
+    <a {% if getData.current === "contacts" %}aria-current="page" {% endif 
+        %} href="contacts?current=contacts">
+      Contacts
+    </a>
+  </li>
+  <li>
+    <a {% if getData.current === "shortlisting" %}aria-current="page" {% endif 
+        %} href="shortlisting?current=shortlisting">
+      Shortlisting
+    </a>
+  </li>
+  <li>
+    <a {% if getData.current === "vacancy" %}aria-current="page" {% endif 
+        %} href="vacancy?current=vacancy">
+      Vacancy information
+    </a>
+  </li>
+  <li>
+    <a {% if getData.current === "eligibility" %}aria-current="page" {% endif 
+        %} href="eligibility?current=eligibility">
+      Eligibility information
+    </a>
+  </li>
+</ul>
+
+<a href="#" class="govuk-button govuk-button--secondary">
+  ☆ Watch exercise
+</a>
+<!--LINK-->
+<p class="govuk-body-s"><a target="blank"
+    href="https://www.judicialappointments.gov.uk/138-deputy-judge-upper-tribunal-immigration-and-asylum-chamber-information-page">
+    View info page
+  </a></p>
+<p class="govuk-body-s">
+  <a target="blank"
+    href="https://www.judicialappointments.gov.uk/138-deputy-judge-upper-tribunal-immigration-and-asylum-chamber-information-page">
+    View application form
+  </a>
+</p>
+<a href="#" class="govuk-button govuk-button--warning">
+  Delete exercise
+</a>

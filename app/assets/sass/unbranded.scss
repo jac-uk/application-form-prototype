@@ -167,6 +167,44 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   }
 }
 
+/* Side nav */
+
+.dwp-vertical-navigation {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.dwp-vertical-navigation li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+
+  @include govuk-media-query($from: tablet) {
+    max-width: 200px;
+  }
+}
+
+.dwp-vertical-navigation li a {
+  padding: 10px;
+  display: block;
+
+  &:hover {
+    color: govuk-colour("dark-blue");
+  }
+}
+
+.dwp-vertical-navigation a[aria-current="page"] {
+  color: govuk-colour("blue");
+  font-weight: bold;
+  text-decoration: none;
+  border-left: 4px solid govuk-colour("blue");
+  background-color: govuk-colour("light-grey");
+}
+
+
+
+
 .govuk-panel {
   text-align: left;
 }

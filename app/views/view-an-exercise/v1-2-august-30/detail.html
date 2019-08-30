@@ -15,16 +15,23 @@ Create an exercise
     <form class="form" action="vacancies" method="post">
 
       <div class="govuk-grid-row">
+
+        {% include "includes/side-nav.html" %}
+
+
+      </div>
+      <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
+          <div style="text-align: right; margin-bottom:0px;">
+            <a href="#" class="govuk-button govuk-button--secondary">
+              ☆ Watch exercise
+            </a>
+          </div>
           <span class="govuk-caption-xl">118<strong class="govuk-tag__exercise-type">
               Legal
             </strong></span>
-          <h1 class="govuk-heading-xl" style="margin-bottom:0px;">Senior circuit judge of the Employment Appeal Tribunal
+          <h1 class="govuk-heading-xl">Senior circuit judge of the Employment Appeal Tribunal
           </h1>
-          <div style="text-align: right;"> <a href="#" class="govuk-button govuk-button--secondary">
-              ☆ Add 118 to your exercises
-            </a>
-          </div>
         </div>
       </div>
 
