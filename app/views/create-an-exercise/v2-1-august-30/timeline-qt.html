@@ -121,7 +121,7 @@ Create an exercise
             <p class="govuk-heading-l">Situational judgment test, Critical analysis test</p>
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                Test open date
+                Start date for Situational judgment test, Critical analysis test
               </legend>
               <span id="waste-hint" class="govuk-hint">
                 For example, 31 05 2020
@@ -162,7 +162,36 @@ Create an exercise
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
 
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                Test open time
+                Start time for Situational judgment test, Critical analysis test
+              </legend>
+              <div class="govuk-date-input__item" style="margin-right:10px;">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-hour">
+                    Hour
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-hour"
+                    name="passport-issued-hour" type="number" pattern="[0-9]*">
+                </div>
+              </div>
+              <div class="govuk-date-input__item" style="margin-right: 0.75rem;">
+                <p class="govuk-body" style="display: inline;">:</p>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-minute">
+                    Minute
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-minute"
+                    name="passport-issued-minute" type="number" pattern="[0-9]*">
+                </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                End time for Situational judgment test, Critical analysis test
               </legend>
               <div class="govuk-date-input__item" style="margin-right:10px;">
                 <div class="govuk-form-group">
@@ -190,7 +219,7 @@ Create an exercise
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                Test outcome to candidates
+                Situational judgment test, Critical analysis test outcome to candidates
               </legend>
               <div class="govuk-date-input" id="passport-issued">
                 <div class="govuk-date-input__item">
@@ -225,45 +254,10 @@ Create an exercise
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                Contact independent assessors (IAs)
+                Contact independent assessors
               </legend>
-              <div class="govuk-date-input" id="passport-issued">
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                      Day
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day"
-                      name="passport-issued-day" type="number" pattern="[0-9]*">
-                  </div>
-                </div>
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                      Month
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
-                      name="passport-issued-month" type="number" pattern="[0-9]*">
-                  </div>
-                </div>
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                      Year
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
-                      name="passport-issued-year" type="number" pattern="[0-9]*">
-                  </div>
-                </div>
-            </fieldset>
-          </div>
-
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                Deadline for IAs </legend>
               <span id="waste-hint" class="govuk-hint">
-                This is when a reminder email will be sent to IAs who have not responded.
+                Email reminders will be sent to assessors who have not responded after 2 weeks.
               </span>
               <div class="govuk-date-input" id="passport-issued">
                 <div class="govuk-date-input__item">
@@ -293,12 +287,8 @@ Create an exercise
                       name="passport-issued-year" type="number" pattern="[0-9]*">
                   </div>
                 </div>
-              </div>
             </fieldset>
           </div>
-
-
-
 
 
           <!--SUB TITLE-->
@@ -478,13 +468,13 @@ Create an exercise
           </div>
           <!--DATE-->
           <h2 class="govuk-heading-l">
-            xxx dates
+            Final outcome dates
           </h2>
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
 
               <h2 class="govuk-heading-m">
-                Outcome to candidates
+                Final outcome to candidates
               </h2>
               <div class="govuk-date-input" id="passport-issued">
                 <div class="govuk-date-input__item">
@@ -511,7 +501,8 @@ Create an exercise
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
 
-              <h2 class="govuk-heading-m">
+              <!--BUTTON
+               <h2 class="govuk-heading-m">
                 Recommendation to Judicial Office
               </h2>
               <div class="govuk-date-input" id="passport-issued">
@@ -536,15 +527,16 @@ Create an exercise
               </div>
             </fieldset>
           </div>
+          -->
 
-          <!--BUTTON-->
-          <button type="submit" class="govuk-button" data-module="govuk-button">
-            Save and continue
-          </button>
+              <!--BUTTON-->
+              <button type="submit" class="govuk-button" data-module="govuk-button">
+                Save and continue
+              </button>
 
-          <!--END MAIN WRAPPER-->
+              <!--END MAIN WRAPPER-->
+          </div>
         </div>
-      </div>
     </form>
   </main>
 
