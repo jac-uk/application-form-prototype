@@ -41,26 +41,32 @@ Create an exercise
 
 
           <!--TEXT INPUT-->
+          <!--contact
           <div class="govuk-form-group">
             <label class="govuk-label-input" for="exercise-team">
               Policy contact
             </label>
             <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
           </div>
+          -->
 
           <!--TEXT INPUT-->
+          <!--contact
           <div class="govuk-form-group">
             <label class="govuk-label-input" for="exercise-team">
               Equality and diversity contact
             </label>
             <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
           </div>
+          -->
 
           <!--TEXT INPUT-->
           <div class="govuk-form-group">
             <label class="govuk-label-input" for="exercise-team">
               Senior selection exercise manager
             </label>
+            <span id="waste-hint" class="govuk-hint">
+              This contact will also appear on the exercise information page. </span>
             <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
           </div>
 
@@ -100,12 +106,13 @@ Create an exercise
           </h2>
 
 
+
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                <h2 class="govuk-heading-l">
+                <label class="govuk-label-input" for="exercise-team">
                   Appropriate authority
-                </h2>
+                </label>
               </legend>
               <span id="waste-hint" class="govuk-hint">
                 Select all that apply.
@@ -129,6 +136,13 @@ Create an exercise
                     Senior President of Tribunals
                   </label>
                 </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Welsh Government
+                  </label>
+                </div>
+
               </div>
             </fieldset>
           </div>
@@ -141,6 +155,7 @@ Create an exercise
             <p class="govuk_body">
             </p>
           </div>
+
 
           <!--TEXT INPUT-->
           <div class="govuk-form-group">
