@@ -1,0 +1,158 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="timeline" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Key dates of all JAC exercises
+          </h1>
+
+          <p class="govuk-body-l">Check dates to avoid for your exercise.</p>
+
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="#date-1">Situational judgment test, Critical analysis test</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="#date-2">Scenario test date</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="#date-3">Scenario test evaluation date</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="#date-4">Sift date</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="#date-5">Selection day dates</a>
+            </li>
+          </ul>
+
+          <!--DATE-->
+
+          <p class="govuk-heading-l" id="date-1">Situational judgment test, Critical analysis test</p>
+
+          <!--TABLE-->
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">22 August 2019</th>
+                <td class="govuk-table__cell">115 Recorder</td>
+                <td class="govuk-table__cell">Alishia Gilmour</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">2 September 2019</th>
+                <td class="govuk-table__cell">107 Circuit judge</td>
+                <td class="govuk-table__cell">Gavin Mcconnell</td>
+              </tr>
+            </tbody>
+          </table>
+          <!--END TABLE-->
+          <br>
+
+          <p class="govuk-heading-l" id="date-2">Scenario test date</p>
+
+          <!--TABLE-->
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">22 August 2019</th>
+                <td class="govuk-table__cell">115 Recorder</td>
+                <td class="govuk-table__cell">Phillippa Samuels</td>
+
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">2 September 2019</th>
+                <td class="govuk-table__cell">107 Circuit judge</td>
+                <td class="govuk-table__cell">Sierra Mcmillan</td>
+              </tr>
+            </tbody>
+          </table>
+          <!--END TABLE-->
+          <br>
+
+          <p class="govuk-heading-l" id="date-3">Scenario test evaluation date</p>
+
+          <!--TABLE-->
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">22 August 2019</th>
+                <td class="govuk-table__cell">115 Recorder</td>
+                <td class="govuk-table__cell">Nisha Fisher</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">2 September 2019</th>
+                <td class="govuk-table__cell">107 Circuit judge</td>
+                <td class="govuk-table__cell">Haley Holmes</td>
+              </tr>
+            </tbody>
+          </table>
+          <!--END TABLE-->
+          <br>
+
+          <p class="govuk-heading-l" id="date-4">Sift date</p>
+
+          <!--TABLE-->
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">22 August 2019</th>
+                <td class="govuk-table__cell">115 Recorder</td>
+                <td class="govuk-table__cell">Lacey-May Hodson</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">2 September 2019</th>
+                <td class="govuk-table__cell">107 Circuit judge</td>
+                <td class="govuk-table__cell">Akeem Norton</td>
+              </tr>
+            </tbody>
+          </table>
+          <!--END TABLE-->
+          <br>
+
+          <p class="govuk-heading-l" id="date-5">Selection day dates</p>
+
+          <!--TABLE-->
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">22 August 2019</th>
+                <td class="govuk-table__cell">115 Recorder</td>
+                <td class="govuk-table__cell">India Hoffman</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">2 September 2019</th>
+                <td class="govuk-table__cell">107 Circuit judge</td>
+                <td class="govuk-table__cell">Alishia Gilmour</td>
+              </tr>
+            </tbody>
+          </table>
+          <!--END TABLE-->
+          <br>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

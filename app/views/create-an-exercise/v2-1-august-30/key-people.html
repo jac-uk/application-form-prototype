@@ -1,0 +1,211 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="shortlisting" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Add exercise contacts
+          </h1>
+
+          <p class="govuk-body-l">You can return to this page later
+            to add or change contacts.</p>
+          <br>
+
+          <!--SUB TITLE-->
+          <h2 class="govuk-heading-l">
+            JAC contacts
+          </h2>
+
+          <!--mailbox
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Exercise mailbox
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+          </div>
+         -->
+
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Policy contact
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Equality and diversity contact
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Senior selection exercise manager
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Selection exercise manager
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Selection exercise officer
+            </label>
+            <input class="govuk-input govuk-!-margin-bottom-4" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body">
+              <a href="#">Add another</a>
+            </p>
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Assigned commissioner
+            </label>
+            <input class="govuk-input govuk-!-margin-bottom-4" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body">
+              <a href="#">Add another</a>
+            </p>
+          </div>
+
+          <!--SUB TITLE-->
+          <h2 class="govuk-heading-l">
+            Other contacts
+          </h2>
+
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h2 class="govuk-heading-l">
+                  Appropriate authority
+                </h2>
+              </legend>
+              <span id="waste-hint" class="govuk-hint">
+                Select all that apply.
+              </span>
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Lord Chancellor
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Lord Chief Justice
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Senior President of Tribunals
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Judicial Office contact
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body">
+            </p>
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              HMCTS or Welsh Government lead
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body">
+            </p>
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Lead judge
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Drafting judge
+            </label>
+            <input class="govuk-input govuk-!-margin-bottom-4" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body">
+              <a href="#">Add another</a>
+            </p>
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Statutory consultee
+            </label>
+            <input class="govuk-input govuk-!-margin-bottom-4" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body">
+              <a href="#">Add another</a>
+            </p>
+          </div>
+
+          <!--TEXT INPUT
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Other stakeholders
+            </label>
+            <input class="govuk-input govuk-!-margin-bottom-4" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body">
+              <a href="#">Add another</a>
+            </p>
+          </div>
+
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
