@@ -12,143 +12,177 @@ Create an exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="timeline" method="post">
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-row">
 
+      <div class="govuk-grid-column-full">
+        <!--PAGE TITLE-->
+        <h1 class="govuk-heading-xl">
+          Key dates of all JAC exercises
+        </h1>
+        <p class="govuk-body-l">Check dates to avoid for your exercise.</p>
 
-          <!--PAGE TITLE-->
-          <h1 class="govuk-heading-xl">
-            Key dates of all JAC exercises
-          </h1>
-
-          <p class="govuk-body-l">Check dates to avoid for your exercise.</p>
-
-          <ul class="govuk-list">
-            <li>
-              <a class="govuk-link" href="#date-1">Situational judgment test, Critical analysis test</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#date-2">Scenario test date</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#date-3">Scenario test evaluation date</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#date-4">Sift date</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#date-5">Selection day dates</a>
-            </li>
-          </ul>
-
-          <!--DATE-->
-
-          <p class="govuk-heading-l" id="date-1">Situational judgment test, Critical analysis test</p>
-
-          <!--TABLE-->
-          <table class="govuk-table">
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">22 August 2019</th>
-                <td class="govuk-table__cell">115 Recorder</td>
-                <td class="govuk-table__cell">Alishia Gilmour</td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">2 September 2019</th>
-                <td class="govuk-table__cell">107 Circuit judge</td>
-                <td class="govuk-table__cell">Gavin Mcconnell</td>
-              </tr>
-            </tbody>
-          </table>
-          <!--END TABLE-->
-          <br>
-
-          <p class="govuk-heading-l" id="date-2">Scenario test date</p>
-
-          <!--TABLE-->
-          <table class="govuk-table">
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">22 August 2019</th>
-                <td class="govuk-table__cell">115 Recorder</td>
-                <td class="govuk-table__cell">Phillippa Samuels</td>
-
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">2 September 2019</th>
-                <td class="govuk-table__cell">107 Circuit judge</td>
-                <td class="govuk-table__cell">Sierra Mcmillan</td>
-              </tr>
-            </tbody>
-          </table>
-          <!--END TABLE-->
-          <br>
-
-          <p class="govuk-heading-l" id="date-3">Scenario test evaluation date</p>
-
-          <!--TABLE-->
-          <table class="govuk-table">
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">22 August 2019</th>
-                <td class="govuk-table__cell">115 Recorder</td>
-                <td class="govuk-table__cell">Nisha Fisher</td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">2 September 2019</th>
-                <td class="govuk-table__cell">107 Circuit judge</td>
-                <td class="govuk-table__cell">Haley Holmes</td>
-              </tr>
-            </tbody>
-          </table>
-          <!--END TABLE-->
-          <br>
-
-          <p class="govuk-heading-l" id="date-4">Sift date</p>
-
-          <!--TABLE-->
-          <table class="govuk-table">
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">22 August 2019</th>
-                <td class="govuk-table__cell">115 Recorder</td>
-                <td class="govuk-table__cell">Lacey-May Hodson</td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">2 September 2019</th>
-                <td class="govuk-table__cell">107 Circuit judge</td>
-                <td class="govuk-table__cell">Akeem Norton</td>
-              </tr>
-            </tbody>
-          </table>
-          <!--END TABLE-->
-          <br>
-
-          <p class="govuk-heading-l" id="date-5">Selection day dates</p>
-
-          <!--TABLE-->
-          <table class="govuk-table">
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">22 August 2019</th>
-                <td class="govuk-table__cell">115 Recorder</td>
-                <td class="govuk-table__cell">India Hoffman</td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">2 September 2019</th>
-                <td class="govuk-table__cell">107 Circuit judge</td>
-                <td class="govuk-table__cell">Alishia Gilmour</td>
-              </tr>
-            </tbody>
-          </table>
-          <!--END TABLE-->
-          <br>
-
-          <!--END MAIN WRAPPER-->
+        <div class="govuk-form-group" style="margin-bottom:10px;">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m" style="margin-bottom: 10px;">
+              <h1 class="govuk-fieldset__heading">
+                Filter list
+              </h1>
+            </legend>
+            <div class="govuk-checkboxes govuk-checkboxes--small">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox"
+                  value="hmrc">
+                <label class="govuk-label govuk-checkboxes__label" for="organisation">
+                  QT
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox"
+                  value="employment-tribunal">
+                <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                  Selection days
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox"
+                  value="MOD">
+                <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
+                  Sift
+                </label>
+              </div>
+            </div>
+          </fieldset>
         </div>
+        <a href="#" class="govuk-button">Apply filter</a>
+
+        <!--TABLE-->
+        <table class="govuk-table">
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">30 Sep to 4 Oct 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--selection">Selection
+                  days</span></td>
+              <td class="govuk-table__cell"><a href="#">315 First Tier Tribunal Judges</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">2 Oct 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--qt">QT</span></td>
+              <td class="govuk-table__cell"><a href="#">344 VTE Chairmen</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">7 Oct 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--sift">Sift</span>
+              </td>
+              <td class="govuk-table__cell"><a href="#">341 First Tier Tribunal Lay Member Information Rights</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">7 Oct to 18 Oct 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--selection">Selection
+                  days</span></td>
+              <td class="govuk-table__cell"><a href="#">339 Deputy Judges UT IAC</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">8 Oct 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--qt">QT</span></td>
+              <td class="govuk-table__cell"><a href="#">334 Recorder 2019</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">10 Oct to 11 Oct 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--selection">Selection
+                  days</span></td>
+              <td class="govuk-table__cell"><a href="#">376 Resident Judge Teeside & Wales</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">14 Oct to 18 Oct 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--selection">Selection
+                  days</span></td>
+              <td class="govuk-table__cell"><a href="#">315 First Tier Tribunal Judges</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">21 Oct to 25 Oct 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--selection">Selection
+                  days</span></td>
+              <td class="govuk-table__cell"><a href="#">335 Chairman Health Service Products Appeal Tribunals</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">21 Oct to 25 Oct 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--selection">Selection
+                  days</span></td>
+              <td class="govuk-table__cell"><a href="#">336 Chairman Health Service Products Appeal Tribunals</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">21 Oct to 25 Oct 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--selection">Selection
+                  days</span></td>
+              <td class="govuk-table__cell"><a href="#">317 Deputy District Judge</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">30 Oct 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--sift">Sift</span>
+              </td>
+              <td class="govuk-table__cell"><a href="#">378 Senior Circuit Judge</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">4 Nov to 8 Nov 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--selection">Selection
+                  days</span></td>
+              <td class="govuk-table__cell"><a href="#">317 Deputy District Judge</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">4 Nov to 11 Nov 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--selection">Selection
+                  days</span></td>
+              <td class="govuk-table__cell"><a href="#">337 Professional Members First Tier Tribunal, Property</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">5 Nov 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--selection">Selection
+                  days</span></td>
+              <td class="govuk-table__cell"><a href="#">342 Deputy Regional Valuer</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">6 Nov 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--sift">Sift</span>
+              </td>
+              <td class="govuk-table__cell"><a href="#">347 Tribunal President Employment</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">7 Nov 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--sift">Sift</span>
+              </td>
+              <td class="govuk-table__cell"><a href="#">384 Tribunal President HESC</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">14 Nov 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--qt">QT</span></td>
+              <td class="govuk-table__cell"><a href="#">375 Educational Panel Members SENTW</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">15 Nov 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--sift">Sift</span>
+              </td>
+              <td class="govuk-table__cell"><a href="#">381 Principal Judge for the Land Registration Tribunal</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">18 Nov 2019</th>
+              <td class="govuk-table__cell"><span class="govuk-tag__exercise govuk-tag__exercise--sift">Sift</span>
+              </td>
+              <td class="govuk-table__cell"><a href="#">348 Judge Advocate General</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--END TABLE-->
+
+        <!--END MAIN WRAPPER-->
       </div>
-    </form>
+    </div>
   </main>
 
   {% include "includes/footer.html" %}

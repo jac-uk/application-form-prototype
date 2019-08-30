@@ -124,12 +124,11 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   padding: 60px 10px 10px 10px;
 }
 
-.govuk-tag__exercise-type {
+.govuk-tag__exercise {
   display: inline-block;
   outline: 2px solid transparent;
   outline-offset: -2px;
   color: #ffffff;
-  background-color: #0b0c0c;
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
@@ -145,7 +144,28 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   padding-right: 8px;
   padding-bottom: 4px;
   padding-left: 8px;
-  position: absolute
+}
+
+.govuk-tag__exercise--type {
+  background-color: #0b0c0c;
+}
+
+.govuk-tag__exercise--sift {
+  background-color: #ECA01D;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.govuk-tag__exercise--qt {
+  background-color: #d53880;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.govuk-tag__exercise--selection {
+  background-color: #1d70b8;
+  margin-left: 0;
+  margin-bottom: 10px;
 }
 
 .govuk-label-input {
