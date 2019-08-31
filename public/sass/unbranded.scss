@@ -34,8 +34,9 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 }
 
 .header-background {
-  background-color: #fafafa;
+  background-color: #f7f7f7;
   padding: 20px 10px 0 10px;
+  border-bottom: 1px solid #b1b4b6;
 
 
 }
@@ -65,6 +66,7 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 .govuk-phase-banner {
   margin-bottom: 40px;
+  border-bottom: 0;
 }
 
 .moj-search {
@@ -93,6 +95,17 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   color: #0b0c0c;
 }
 
+.govuk-button--warning {
+  background-color: #d4351c;
+  box-shadow: 0 2px 0 #55150b;
+}
+
+.govuk-button--secondary:hover,
+.govuk-button--secondary:focus {
+  background-color: #dbdad9;
+  color: #0b0c0c;
+}
+
 @media (min-width: 40.0625em) {
   .govuk-input--search {
     width: 90%;
@@ -111,6 +124,50 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 .footer-content {
   padding: 60px 10px 10px 10px;
+}
+
+.govuk-tag__exercise {
+  display: inline-block;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1;
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+}
+
+.govuk-tag__exercise--type {
+  background-color: #0b0c0c;
+}
+
+.govuk-tag__exercise--sift {
+  background-color: #ECA01D;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.govuk-tag__exercise--qt {
+  background-color: #d53880;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.govuk-tag__exercise--selection {
+  background-color: #1d70b8;
+  margin-left: 0;
+  margin-bottom: 10px;
 }
 
 .govuk-label-input {
@@ -132,6 +189,44 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   }
 }
 
+/* Side nav */
+
+.dwp-vertical-navigation {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.dwp-vertical-navigation li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+
+  @include govuk-media-query($from: tablet) {
+    max-width: 200px;
+  }
+}
+
+.dwp-vertical-navigation li a {
+  padding: 10px;
+  display: block;
+
+  &:hover {
+    color: govuk-colour("dark-blue");
+  }
+}
+
+.dwp-vertical-navigation a[aria-current="page"] {
+  color: govuk-colour("blue");
+  font-weight: bold;
+  text-decoration: none;
+  border-left: 4px solid govuk-colour("blue");
+  background-color: govuk-colour("light-grey");
+}
+
+
+
+
 .govuk-panel {
   text-align: left;
 }
@@ -150,6 +245,11 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   font-size: 1.75rem;
 }
 
+.govuk-panel__body--s {
+  font-family: "Khula", "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+  font-size: 1rem;
+}
+
 
 .govuk-panel--s {
   margin-bottom: 15px;
@@ -161,9 +261,10 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   background: #f3f2f1;
 }
 
-// Timeline pattern
+
+// DWP Timeline pattern
 .dwp-timeline {
-  border-left: 3px solid govuk-colour("blue");
+  border-left: 5px solid govuk-colour("blue");
 }
 
 .dwp-timeline__entry {
@@ -172,12 +273,12 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   position: relative;
 
   &::before {
-    background-color: govuk-colour("blue");
-    content: ' ';
-    height: 3px;
+    background-color: #1d70b8;
+    content: "";
+    height: 5px;
     left: 0;
     position: absolute;
-    top: .5em;
+    top: 10px;
     width: 10px;
   }
 
@@ -198,9 +299,190 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 .dwp-timeline__author,
 .dwp-timeline__date {
-  color: $govuk-secondary-text-colour;
+  color: #0b0c0c;
   display: block;
 }
+
+
+
+
+/* ==========================================================================
+   #TIMELINE
+   ========================================================================== */
+.moj-timeline {
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.moj-timeline:before {
+  background-color: #1d70b8;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  width: 5px;
+}
+
+.moj-timeline--full {
+  margin-bottom: 0;
+}
+
+.moj-timeline--full:before {
+  height: calc(100% - 75px);
+}
+
+.moj-timeline__item {
+  padding-bottom: 30px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.moj-timeline__item:before {
+  background-color: #1d70b8;
+  content: "";
+  height: 5px;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  width: 15px;
+}
+
+.moj-timeline__title {
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: inline;
+}
+
+@media print {
+  .moj-timeline__title {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .moj-timeline__title {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .moj-timeline__title {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.moj-timeline__byline {
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #6f777b;
+  display: inline;
+  margin: 0;
+}
+
+@media print {
+  .moj-timeline__byline {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .moj-timeline__byline {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .moj-timeline__byline {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.moj-timeline__date {
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.14286;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+@media print {
+  .moj-timeline__date {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .moj-timeline__date {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .moj-timeline__date {
+    font-size: 14pt;
+    line-height: 1.2;
+  }
+}
+
+.moj-timeline__description {
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  margin-top: 20px;
+}
+
+@media print {
+  .moj-timeline__description {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .moj-timeline__description {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .moj-timeline__description {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+/* ========================================================================== */
+
+
 
 // Task list pattern
 .app-task-list {
