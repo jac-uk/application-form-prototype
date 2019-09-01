@@ -12,24 +12,18 @@ Create an exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
+
+    <!--CONFIRMATION BANNER-->
     <div class="govuk-grid-row">
       <div class="govuk-panel--s govuk-panel--green">
-
         <h1 class="govuk-panel__title">Exercise created</h1>
-      </div>
-      <div class="govuk-grid-column-full">
-        <span class="govuk-caption-xl">118<strong class="govuk-tag__exercise govuk-tag__exercise--type">
-            Legal
-          </strong></span>
-        <h1 class="govuk-heading-xl">Senior circuit judge of the Employment Appeal Tribunal
-        </h1>
       </div>
     </div>
 
+    {% include "includes/exercise-title.html" %}
+
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-one-quarter">
-        {% include "includes/side-nav.html" %}
-      </div>
+      {% include "includes/side-nav.html" %}
 
       <div class="govuk-grid-column-three-quarters">
 
