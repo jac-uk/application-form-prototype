@@ -24,6 +24,12 @@
       </a>
     </li>
     <li>
+      <a {% if getData.current === "timeline" %}aria-current="page" {% endif 
+          %} href="timeline?current=timeline">
+        Timeline
+      </a>
+    </li>
+    <li>
       <a {% if getData.current === "vacancy" %}aria-current="page" {% endif 
         %} href="vacancy?current=vacancy">
         Vacancy information
