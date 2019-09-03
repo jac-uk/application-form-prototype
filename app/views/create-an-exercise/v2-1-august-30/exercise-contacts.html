@@ -108,48 +108,63 @@ Create an exercise
 
 
 
+
+          <!--CONDITIONAL CHECKBOX GROUP-->
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                <label class="govuk-label-input" for="exercise-team">
-                  Appropriate authority
-                </label>
+            <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                Appropriate authority
               </legend>
-              <span id="waste-hint" class="govuk-hint">
+              <span id="citizenship-conditional-hint" class="govuk-hint">
                 Select all that apply.
               </span>
-              <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
                 <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    Lord Chancellor
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
                     Lord Chief Justice
                   </label>
                 </div>
                 <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
                     Scottish ministers
                   </label>
                 </div>
                 <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                    Senior President of Tribunals
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                    Senior President of Tribunals (SPT)
                   </label>
                 </div>
                 <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox"
+                    value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
                     Welsh Government
                   </label>
                 </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox"
+                    value="text message" data-aria-controls="conditional-citizenship-conditional-3">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
+                    Other
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
+                  id="conditional-citizenship-conditional-3">
+                  <div class="govuk-form-group">
+                    <label class="govuk-fieldset__legend--s" for="contact-by-text">
+                      Name of the appropriate authority.
+                    </label>
 
+                    <input class="govuk-input govuk-!-width-full" id="contact-by-text" name="contact-by-text"
+                      type="tel">
+                  </div>
+                </div>
               </div>
             </fieldset>
           </div>
