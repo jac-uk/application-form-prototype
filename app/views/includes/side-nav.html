@@ -1,43 +1,44 @@
 <div class="govuk-grid-column-one-quarter">
   <ul class="dwp-vertical-navigation">
     <li>
-      <a {% if getData.current === "overview" %} aria-current="page" {% endif %} href="overview?current=overview">
+      <a {% if getData.current === "tab-overview" %} aria-current="page" {% endif %}
+        href="tab-overview?current=tab-overview">
         Overview
       </a>
     </li>
     <li>
-      <a {% if getData.current === "applications" %} aria-current="page" {% endif %}
-        href="applications?current=applications">
+      <a {% if getData.current === "tab-applications" %} aria-current="page" {% endif %}
+        href="tab-applications?current=tab-applications">
         Applications
       </a>
     </li>
     <li>
-      <a {% if getData.current === "contacts" %}aria-current="page" {% endif 
-        %} href="contacts?current=contacts">
+      <a {% if getData.current === "tab-contacts" %}aria-current="page" {% endif 
+        %} href="tab-contacts?current=tab-contacts">
         Contacts
       </a>
     </li>
     <li>
-      <a {% if getData.current === "shortlisting" %}aria-current="page" {% endif 
-        %} href="shortlisting?current=shortlisting">
+      <a {% if getData.current === "tab-shortlisting" %}aria-current="page" {% endif 
+        %} href="tab-shortlisting?current=tab-shortlisting">
         Shortlisting
       </a>
     </li>
     <li>
-      <a {% if getData.current === "timeline" %}aria-current="page" {% endif 
-          %} href="timeline?current=timeline">
+      <a {% if getData.current === "tab-timeline" %}aria-current="page" {% endif 
+          %} href="tab-timeline?current=tab-timeline">
         Timeline
       </a>
     </li>
     <li>
-      <a {% if getData.current === "vacancy" %}aria-current="page" {% endif 
-        %} href="vacancy?current=vacancy">
+      <a {% if getData.current === "tab-vacancy" %}aria-current="page" {% endif 
+        %} href="tab-vacancy?current=tab-vacancy">
         Vacancy information
       </a>
     </li>
     <li>
-      <a {% if getData.current === "eligibility" %}aria-current="page" {% endif 
-        %} href="eligibility?current=eligibility">
+      <a {% if getData.current === "tab-eligibility" %}aria-current="page" {% endif 
+        %} href="tab-eligibility?current=tab-eligibility">
         Eligibility information
       </a>
     </li>
