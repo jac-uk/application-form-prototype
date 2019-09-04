@@ -253,7 +253,7 @@ Create an exercise
                   id="conditional-reasonable-length-conditional-3">
                   <div class="govuk-form-group">
                     <label class="govuk-label govuk-!-font-weight-bold" for="contact-by-text">
-                      Number of years
+                      Reasonable length of service
                     </label>
                     <input class="govuk-input govuk-!-width-one-quarter" id="contact-by-text" name="contact-by-text"
                       type="tel">
@@ -263,7 +263,50 @@ Create an exercise
             </fieldset>
           </div>
 
-          <!--TEXT INPUT-->
+          <!--CONDITIONAL RADIO GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="age-conditional-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Retirement age
+                </h1>
+              </legend>
+
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="age-conditional" name="age" type="radio" value="email"
+                    data-aria-controls="conditional-age-conditional">
+                  <label class="govuk-label govuk-radios__label" for="age-conditional-1">
+                    70 years
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="age-conditional-2" name="age" type="radio" value="phone"
+                    data-aria-controls="conditional-age-conditional-2">
+                  <label class="govuk-label govuk-radios__label" for="age-conditional-2">
+                    Other
+                  </label>
+                </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                  id="conditional-age-conditional-2">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-!-font-weight-bold" for="contact-by-text">
+                      Retirement age
+                    </label>
+                    <input class="govuk-input govuk-!-width-one-quarter" id="contact-by-text" name="contact-by-text"
+                      type="tel">
+                  </div>
+                </div>
+
+
+              </div>
+            </fieldset>
+          </div>
+
+
+
+
+          <!--Retirement age usually 70
           <div class="govuk-form-group">
             <label class="govuk-label-input" for="exercise-name">
               Retirement age
@@ -274,7 +317,7 @@ Create an exercise
             <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text"><span
               class="govuk-body" style="margin-left: 10px;">years</span>
           </div>
-
+-->
           <!--BUTTON-->
           <button type="submit" class="govuk-button govuk-button--start" data-module="govuk-button">
             Create exercise
