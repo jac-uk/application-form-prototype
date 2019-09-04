@@ -1,0 +1,42 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}<p></p>
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="eligibility" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <span class="govuk-caption-xl">Version</span>
+          <h1 class="govuk-heading-xl">2.1</h1>
+          <p class="govuk-body">Team UX released this on 4 September 2019</p>
+          <h2 class="govuk-heading-l">Removed</h2>
+
+          <h2 class="govuk-heading-l">Changed</h2>
+
+          <h2 class="govuk-heading-l">Added</h2>
+
+          <h2 class="govuk-heading-l">Fixed</h2>
+
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

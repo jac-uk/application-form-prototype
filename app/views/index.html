@@ -8,99 +8,114 @@ Sign in
 
 <div class="govuk-width-container">
 
-  <!--HEADER-->
-  <div class="govuk-heading-l">Judicial Appointments Commission</div>
-  <hr class="govuk-section-break govuk-section-break--visible">
-  <div class="govuk-phase-banner">
-    <p class="govuk-phase-banner__content">
-      <strong class="govuk-tag govuk-phase-banner__content__tag">
-        alpha
-      </strong>
-      <span class="govuk-phase-banner__text">
-        This is a new service – your feedback will help us improve it.
-      </span>
-    </p>
-  </div>
-  <!--END HEADER-->
+  {% include "includes/header.html" %}<p><br></p>
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
 
     <form class="form" action="dashboard" method="post">
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-full">
 
-          <!--PAGE TITLE-->
-          <h1 class="govuk-heading-xl">Staff Prototype</h1>
+        <div class="govuk-grid-column-one-half">
           <h2 class="govuk-heading-l">Create an exercise</h2>
-
           <h2 class="govuk-heading-l">
-            <a href="create-an-exercise/v2-0-august-22/sign-in">v2.0 - Latest stable version</a> 🚀
-            <span class="govuk-hint">User tested on 29 August</span>
+            <a href="create-an-exercise/v2-1-august-30/dashboard">v2.1 - Latest stable version</a> 💥
+            <span class="govuk-hint">User tested on 2 September<br>
+              View changelog (tbc)</span>
           </h2>
-
-          <h3 class="govuk-heading-s" style="margin-bottom: 5px">Current version in progress</h3>
-          <p class="govuk-body"><a href="create-an-exercise/v2-1-august-30/sign-in">v2.1</a>
-          </p>
-
           <h3 class="govuk-heading-s" style="margin-bottom: 5px">Previous versions</h3>
           <p class="govuk-body">
-            <a href="create-an-exercise/v1-3-august-15/sign-in">v1.3</a> - User tested on 21 August<br>
+            <a href="create-an-exercise/v2-0-august-22/dashboard">v2.0</a> - User tested on 29 August<br>
+            <a href="create-an-exercise/v1-3-august-15/dashboard">v1.3</a> - User tested on 21 August<br>
             <a href="create-an-exercise/v1-2-august-12/dashboard">v1.2</a><br>
             <a href="create-an-exercise/v1-1-august-8/dashboard">v1.1</a><br>
             <a href="create-an-exercise/v1-0-august-6/dashboard">v1.0</a>
           </p>
+        </div>
 
-          <br>
-          <div class="govuk-form-group">
+        <div class="govuk-grid-column-one-half index-image">
+          <img src="../../public/images/create-an-exercise.png" width="350px"
+            style="border: 1px solid black; margin:2px;">
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div style="margin: 2rem 0 2rem 0;">
             <hr class="govuk-section-break govuk-section-break--visible">
           </div>
+        </div>
+      </div>
 
-          <h2 class="govuk-heading-l">Read/Update/Delete an exercise</h2>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half">
+
+          <h2 class="govuk-heading-l">View an exercise</h2>
+
+          <h2 class="govuk-heading-l">
+            <a href="view-an-exercise/v1-2-august-30/tab-overview">v1.2 - Latest stable version</a> 🎉
+            <span class="govuk-hint">User tested on 2 September</span>
+          </h2>
+
+          <h3 class="govuk-heading-s" style="margin-bottom: 5px">Previous versions</h3>
           <p class="govuk-body">
-            <h3 class="govuk-heading-s" style="margin-bottom: 5px">Current version in progress</h3>
-            <p class="govuk-body"><a href="view-an-exercise/v1-2-august-30/overview">v1.2</a></p>
+            <a href="view-an-exercise/v1-1-august-22/detail">v1.1</a><br>
+            <a href="view-an-exercise/v1-0-august-15/detail">v1.0</a><br>
+          </p>
 
-            <h3 class="govuk-heading-s" style="margin-bottom: 5px">Previous versions</h3>
-            <p class="govuk-body">
-              <a href="view-an-exercise/v1-1-august-22/detail">v1.1</a><br>
-              <a href="view-an-exercise/v1-0-august-15/detail">v1.0</a><br>
-            </p>
+        </div>
 
-            <br>
-            <div class="govuk-form-group">
-              <hr class="govuk-section-break govuk-section-break--visible">
-            </div>
-
-            <h2 class="govuk-heading-l">Find an applicant</h2>
-            <p class="govuk-body">For non-selection exercise team users
-              <h3 class="govuk-heading-s" style="margin-bottom: 5px">Current version in progress</h3>
-              <p class="govuk-body"><a href="find-an-applicant/v1-0-august-15/dashboard">v1.0</a></p>
+        <div class="govuk-grid-column-one-half index-image">
+          <img src="../../public/images/view-an-exercise.png" width="350px"
+            style="border: 1px solid black; margin:2px;">
 
         </div>
       </div>
-    </form>
-  </main>
-  <!--END MAIN WRAPPER-->
 
-  <!--FOOTER-->
-  <footer class="govuk-footer " role="contentinfo">
-    <div class="govuk-width-container ">
-      <div class="govuk-footer__meta">
-        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-
-          <span class="govuk-footer__licence-description">
-            <div>
-              <a href="guide.html">
-                Prototype kit guide
-              </a>
-            </div>
-          </span>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div style="margin: 2rem 0 2rem 0;">
+            <hr class="govuk-section-break govuk-section-break--visible">
+          </div>
         </div>
+      </div>
+
+      <!--
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+          <h2 class="govuk-heading-l">Find an applicant</h2>
+          <p class="govuk-body">For non-selection exercise team users
+            <h3 class="govuk-heading-s" style="margin-bottom: 5px">Current version in progress</h3>
+            <p class="govuk-body"><a href="find-an-applicant/v1-0-august-15/dashboard">v1.0</a></p>
+
+        </div>
+      </div>-->
+
+</div>
+</div>
+</form>
+</main>
+<!--END MAIN WRAPPER-->
+
+<!--FOOTER-->
+<footer class="govuk-footer " role="contentinfo">
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+        <span class="govuk-footer__licence-description">
+          <div>
+            <a href="guide.html">
+              Prototype kit guide
+            </a>
+          </div>
+        </span>
       </div>
     </div>
-  </footer>
-  <!--END FOOTER-->
+  </div>
+</footer>
+<!--END FOOTER-->
 
 </div>
 
