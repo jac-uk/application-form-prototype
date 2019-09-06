@@ -116,6 +116,24 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   margin-bottom: 20px;
 }
 
+@media (min-width: 40.0625em) {
+  .index-image {
+    text-align: right
+  }
+}
+
+code {
+  background-color: rgba(27, 31, 35, .05);
+  border-radius: 3px;
+  font-size: 100%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.govuk-list--bullet {
+  line-height: 1.75rem;
+}
+
 .govuk-footer {
   background-color: #f8f8f7;
   border-top: 1px solid #aca9a0;
