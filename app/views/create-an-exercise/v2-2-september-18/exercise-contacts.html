@@ -1,0 +1,226 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+  <p><a href="name" class="govuk-back-link">Back</a></p>
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="shortlisting" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Add exercise contacts
+          </h1>
+
+          <p class="govuk-body-l">You can return to this page later
+            to add or change contacts.</p>
+          <br>
+
+          <!--SUB TITLE-->
+          <h2 class="govuk-heading-l">
+            JAC contacts
+          </h2>
+
+          <!--mailbox-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Exercise mailbox
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Senior selection exercise manager
+            </label>
+            <span id="waste-hint" class="govuk-hint">
+              This contact will also appear on the exercise information page. </span>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Selection exercise manager
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Selection exercise officer
+            </label>
+            <input class="govuk-input govuk-!-margin-bottom-4" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body">
+              <a href="#" class="govuk-button govuk-button--secondary">Add another</a>
+            </p>
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Assigned commissioner
+            </label>
+            <input class="govuk-input govuk-!-margin-bottom-4" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body">
+              <a href="#" class="govuk-button govuk-button--secondary">Add another</a>
+            </p>
+          </div>
+
+          <!--SUB TITLE-->
+          <h2 class="govuk-heading-l">
+            Other contacts
+          </h2>
+
+
+          <!--CONDITIONAL CHECKBOX GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                Appropriate authority
+              </legend>
+              <span id="citizenship-conditional-hint" class="govuk-hint">
+                Select all that apply.
+              </span>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                    Lord Chancellor
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                    Lord Chief Justice
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                    Senior President of Tribunals (SPT)
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                    Senior Presiding Judge (SPJ)
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                    Scottish ministers
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox"
+                    value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                    Welsh Government
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox"
+                    value="text message" data-aria-controls="conditional-citizenship-conditional-3">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
+                    Other
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
+                  id="conditional-citizenship-conditional-3">
+                  <div class="govuk-form-group">
+                    <label class="govuk-fieldset__legend--s" for="contact-by-text">
+                      Name of the appropriate authority
+                    </label>
+                    <input class="govuk-input govuk-!-width-full" id="contact-by-text" name="contact-by-text"
+                      type="tel">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              HMCTS or Welsh Government lead contact
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body">
+            </p>
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Judicial Office contact
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body">
+            </p>
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Lead judge
+            </label>
+            <input class="govuk-input" id="exercise-team" name="exercise-team" type="text">
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Drafting judge
+            </label>
+            <input class="govuk-input govuk-!-margin-bottom-4" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body">
+              <a href="#" class="govuk-button govuk-button--secondary">Add another</a>
+            </p>
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="exercise-team">
+              Statutory consultee
+            </label>
+            <input class="govuk-input govuk-!-margin-bottom-4" id="exercise-team" name="exercise-team" type="text">
+            <p class="govuk_body">
+              <a href="#" class="govuk-button govuk-button--secondary">Add another</a>
+            </p>
+          </div>
+
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

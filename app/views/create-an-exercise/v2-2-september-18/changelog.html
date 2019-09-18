@@ -1,0 +1,99 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+  <p><a href="/index" class="govuk-back-link">Back</a></p>
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="eligibility" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <span class="govuk-caption-xl">Version</span>
+          <h1 class="govuk-heading-xl">2.1<br>
+            <p class="govuk-body"><a href="teamwork" target="_blank">Team UX</a> released this on 4 September 2019</p>
+          </h1>
+          <h2 class="govuk-heading-l">Removed</h2>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>
+              Input of <code>Reference number</code> on 'Create an exercise'
+            </li>
+            <li>
+              <code>Policy contact</code> and <code>Equality and diversity contact</code> on 'Add exercise contacts'
+            </li>
+            <li>
+              <code>Eligibility checks</code> on 'Add exercise timeline'
+            </li>
+            <li>
+              Textarea progressive disclosure on <code>Does Schedule 2(d) apply?</code> and radio option 'not
+              applicable' from
+              <code>Post-qualification experience (PQE)</code> on 'Add eligibility information'
+            </li>
+          </ul>
+
+          <h2 class="govuk-heading-l">Changed</h2>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>
+              Moved <code>Type of exercise</code> from 'Create an exercise' to 'About the vacancy'
+            </li>
+            <li>
+              Content of labels on 'Add shortlisting methods'
+            </li>
+            <li>
+              Content of labels and headings on 'Add timeline'
+            </li>
+            <li>Order of inputs on 'About the vacancy'</li>
+            <li>
+              Input replaced with Select for <code>Appointment type/Salaried</code> on 'About the vacancy'
+            </li>
+            <li>
+              Input replaced with Textarea for <code>Location</code>, <code>Jurisdiction</code> on 'About the vacancy'
+            </li>
+            <li>Content of labels and order of inputs on 'Add eligibility information'</li>
+            <li>Input replaced with radio group for <code>Retirement age</code> on 'Add eligibility information'</li>
+          </ul>
+
+          <h2 class="govuk-heading-l">Added</h2>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>
+              Back link
+            </li>
+            <li>
+              <code>Exercise mailbox</code> on 'Add exercise contacts'
+            </li>
+            <li>
+              Hint text for <code>Senior selection exercise manager</code> on 'Add exercise contacts'
+            </li>
+            <li>
+              Additional inputs for <code> Appropriate authority</code> on 'Add exercise contacts'
+            </li>
+            <li>
+              Additional input on 'Add shortlisting methods'
+            </li>
+            <li>Hint text for <code>Contact independent assessors</code>, <code>Character checks</code>, <code>Selection
+                process outcome</code> on 'Add exercise timeline'</li>
+            <li><code>Location</code> input for Selection day group on 'Add exercise timeline'</li>
+            <li><code>About the role</code> Textarea and <code>Terms and conditions</code> document upload on 'About
+              the vacancy'</li>
+          </ul>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

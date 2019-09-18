@@ -116,6 +116,11 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   margin-bottom: 20px;
 }
 
+.link-remove {
+  color: #d4351c !important;
+
+}
+
 @media (min-width: 40.0625em) {
   .index-image {
     text-align: right
