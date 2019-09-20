@@ -19,9 +19,11 @@ Create an exercise
 
           <!--PAGE TITLE-->
           <h3 class="govuk-heading-xl">
-            Add eligibility information
+            Eligibility information
           </h3>
-          <p class="govuk-body-l">You'll find this information in the eligibility statement from HMCTS.</p>
+          <p class="govuk-body-l">You'll find this information in the eligibility statement from HMCTS. You can return
+            to this page later
+            to add or change information.</p>
           <br>
 
           <!--CONDITIONAL RADIO GROUP-->
@@ -103,6 +105,76 @@ Create an exercise
             </fieldset>
           </div>
 
+          <!--CONDITIONAL RADIO GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="additional-selection-conditional-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Does additional selection criteria (ASC) apply?
+                </h1>
+              </legend>
+              <span id="event-name-hint" class="govuk-hint">
+                This is also known as non-statutory eligibility. It describes what additional skills or experience
+                candidates must have.
+              </span>
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="additional-selection-conditional-3" name="additional-selection"
+                    type="radio" value="text" data-aria-controls="conditional-additional-selection-conditional-3">
+                  <label class="govuk-label govuk-radios__label" for="additional-selection-conditional-3">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                  id="conditional-additional-selection-conditional-3">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label-input" for="contact-by-text">
+                      Additional skills and experience
+                    </label>
+                    <div class="govuk-form-group">
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                        aria-describedby="more-detail-hint"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="additional-selection-conditional" name="additional-selection"
+                    type="radio" value="email" data-aria-controls="conditional-additional-selection-conditional">
+                  <label class="govuk-label govuk-radios__label" for="additional-selection-conditional">
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <!--CONDITIONAL RADIO GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="pje-conditional-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Does previous judicial experience (PJE) apply?
+                </h1>
+              </legend>
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="pje-conditional-3" name="pje" type="radio" value="text"
+                    data-aria-controls="conditional-pje-conditional-3">
+                  <label class="govuk-label govuk-radios__label" for="pje-conditional-3">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="pje-conditional" name="pje" type="radio" value="email"
+                    data-aria-controls="conditional-pje-conditional">
+                  <label class="govuk-label govuk-radios__label" for="pje-conditional">
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
           <!--CONDITIONAL CHECKBOX GROUP-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
@@ -162,49 +234,6 @@ Create an exercise
                     <input class="govuk-input govuk-!-width-full" id="contact-by-text" name="contact-by-text"
                       type="tel">
                   </div>
-                </div>
-              </div>
-            </fieldset>
-          </div>
-
-          <!--CONDITIONAL RADIO GROUP-->
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="additional-selection-conditional-hint">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                <h1 class="govuk-fieldset__heading">
-                  Does additional selection criteria (ASC) apply?
-                </h1>
-              </legend>
-              <span id="event-name-hint" class="govuk-hint">
-                This is also known as non-statutory eligibility. It describes what additional skills or experience
-                candidates must have.
-              </span>
-              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="additional-selection-conditional-3" name="additional-selection"
-                    type="radio" value="text" data-aria-controls="conditional-additional-selection-conditional-3">
-                  <label class="govuk-label govuk-radios__label" for="additional-selection-conditional-3">
-                    Yes
-                  </label>
-                </div>
-                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
-                  id="conditional-additional-selection-conditional-3">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label-input" for="contact-by-text">
-                      Additional skills and experience
-                    </label>
-                    <div class="govuk-form-group">
-                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
-                        aria-describedby="more-detail-hint"></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="additional-selection-conditional" name="additional-selection"
-                    type="radio" value="email" data-aria-controls="conditional-additional-selection-conditional">
-                  <label class="govuk-label govuk-radios__label" for="additional-selection-conditional">
-                    No
-                  </label>
                 </div>
               </div>
             </fieldset>

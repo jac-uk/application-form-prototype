@@ -20,9 +20,11 @@ Create an exercise
           <!--PAGE TITLE-->
 
           <h1 class="govuk-heading-xl">
-            About the vacancy
+            Vacancy information
           </h1>
-          <p class="govuk-body-l">You'll find this information in the vacancy request (VR) from HMCTS.</p>
+          <p class="govuk-body-l">You'll find this information in the vacancy request (VR) from HMCTS. You can return to
+            this page later
+            to add or change information.</p>
           <br>
 
           <div class="govuk-form-group">
@@ -113,20 +115,22 @@ Create an exercise
                   id="conditional-appointment-type-conditional">
                   <div class="govuk-form-group">
                     <div class="govuk-form-group">
-                      <label class="govuk-label" for="sort">
+                      <label class="govuk-label-input" for="sort">
                         <strong>Salary Group</strong>
                       </label>
                       <select class="govuk-select" id="sort" name="sort">
-                        <option value="group-1">Group 1</option>
-                        <option value="group-1-1">Group 1.1</option>
-                        <option value="group-2">Group 2</option>
-                        <option value="group-3">Group 3</option>
-                        <option value="group-4">Group 4</option>
-                        <option value="group-5-plus">Group 5+</option>
-                        <option value="group-5">Group 5</option>
-                        <option value="group-6-1">Group 6.1</option>
-                        <option value="group-6-2">Group 6.2</option>
-                        <option value="group-7">Group 7</option>
+                        <option value="group-1">Select an option</option>
+                        <option value="group-1">Group 1 - £262,264</option>
+                        <option value="group-1-1">Group 1.1 - £234,184</option>
+                        <option value="group-2">Group 2 - £226,193</option>
+                        <option value="group-3">Group 3 - £215,094</option>
+                        <option value="group-4">Group 4 - £188,901</option>
+                        <option value="group-5-plus">Group 5+ - £160,377</option>
+                        <option value="group-5">Group 5 - £151,497</option>
+                        <option value="group-6-1">Group 6.1 - £140,289</option>
+                        <option value="group-6-2">Group 6.2 - £132,075</option>
+                        <option value="group-7">Group 7 - £112,542</option>
+                        <option value="group-7">Group 8 - £89,428</option>
                       </select>
                     </div>
                   </div>
@@ -257,18 +261,6 @@ Create an exercise
               aria-describedby="more-detail-hint"></textarea>
           </div>
 
-          <!--TEXT AREA-->
-          <div class="govuk-form-group">
-            <label class="govuk-label-input" for="more-detail">
-              About the role
-            </label>
-            <span id="more-detail-hint" class="govuk-hint">
-              Add information about this role for the information page.
-            </span>
-            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
-              aria-describedby="more-detail-hint"></textarea>
-          </div>
-
           <!--CHECKBOX GROUP-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
@@ -295,6 +287,22 @@ Create an exercise
                 </div>
               </div>
             </fieldset>
+          </div>
+
+          <h2 class="govuk-heading-l">
+            Additional information
+          </h2>
+
+          <!--TEXT AREA-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="more-detail">
+              About the role
+            </label>
+            <span id="more-detail-hint" class="govuk-hint">
+              Add information about this role for the information page.
+            </span>
+            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+              aria-describedby="more-detail-hint"></textarea>
           </div>
 
           <div class="govuk-form-group">
