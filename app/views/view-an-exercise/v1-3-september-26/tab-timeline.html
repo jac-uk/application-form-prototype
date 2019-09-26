@@ -1,0 +1,83 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}<p></p>
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+
+    {% include "includes/exercise-title.html" %}
+
+    <div class="govuk-grid-row">
+
+      <!--SIDE NAV-->
+      <div class="govuk-grid-column-one-quarter">
+        <ul class="dwp-vertical-navigation">
+          <li>
+            <a href="tab-overview?current=tab-overview">
+              Overview
+            </a>
+          </li>
+          <li>
+            <a href="tab-applications?current=tab-applications">
+              Applications
+            </a>
+          </li>
+          <li>
+            <a href="tab-contacts?current=tab-contacts">
+              Contacts
+            </a>
+          </li>
+          <li>
+            <a href="tab-shortlisting?current=tab-shortlisting">
+              Shortlisting
+            </a>
+          </li>
+          <li>
+            <a aria-current="page" href="tab-timeline?current=tab-timeline">
+              Timeline
+            </a>
+          </li>
+          <li>
+            <a href="tab-vacancy?current=tab-vacancy">
+              Vacancy information
+            </a>
+          </li>
+          <li>
+            <a href="tab-eligibility?current=tab-eligibility">
+              Eligibility information
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="govuk-grid-column-three-quarters">
+
+        <!--LINK-->
+        <div style="text-align: right;">
+          <a href="/create-an-exercise/v2-1-august-30/timeline-qt" class="govuk-body">Update timeline</a>
+        </div>
+
+        <!--HEADER-->
+        <h2 class="govuk-heading-l">Timeline</h2>
+
+        <!--TIMELINE-->
+        {% include "includes/timeline-display.html" %}
+
+      </div>
+    </div>
+
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

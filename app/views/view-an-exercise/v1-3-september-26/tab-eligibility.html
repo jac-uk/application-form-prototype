@@ -1,0 +1,119 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Create an exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}<p></p>
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+
+    {% include "includes/exercise-title.html" %}
+
+
+    <div class="govuk-grid-row">
+
+      <!--SIDE NAV-->
+      <div class="govuk-grid-column-one-quarter">
+        <ul class="dwp-vertical-navigation">
+          <li>
+            <a href="tab-overview?current=tab-overview">
+              Overview
+            </a>
+          </li>
+          <li>
+            <a href="tab-applications?current=tab-applications">
+              Applications
+            </a>
+          </li>
+          <li>
+            <a href="tab-contacts?current=tab-contacts">
+              Contacts
+            </a>
+          </li>
+          <li>
+            <a href="tab-shortlisting?current=tab-shortlisting">
+              Shortlisting
+            </a>
+          </li>
+          <li>
+            <a href="tab-timeline?current=tab-timeline">
+              Timeline
+            </a>
+          </li>
+          <li>
+            <a href="tab-vacancy?current=tab-vacancy">
+              Vacancy information
+            </a>
+          </li>
+          <li>
+            <a aria-current="page" href="tab-eligibility?current=tab-eligibility">
+              Eligibility information
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="govuk-grid-column-three-quarters">
+
+        <!--LINK-->
+        <div style="text-align: right;">
+          <a href="/create-an-exercise/v2-1-august-30/eligibility" class="govuk-body">Update eligibility
+            information</a>
+        </div>
+
+        <!--HEADER-->
+        <h2 class="govuk-heading-l">Eligibility information</h2>
+
+        <!--TABLE-->
+        <table class="govuk-table">
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">Post-qualification experience (PQE)</th>
+              <td class="govuk-table__cell">Null</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">Does Schedule 2(d) apply?</th>
+              <td class="govuk-table__cell">Null</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">Qualifications</th>
+              <td class="govuk-table__cell">Null</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">Does additional selection criteria (ASC) apply?</th>
+              <td class="govuk-table__cell">Null</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">Additional skills and experience</th>
+              <td class="govuk-table__cell">Null</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">Reasonable length of service</th>
+              <td class="govuk-table__cell">Null</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">Retirement age</th>
+              <td class="govuk-table__cell">Null</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <!--END TABS-->
+
+    </div>
+</div>
+
+</main>
+
+{% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
